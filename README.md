@@ -23,3 +23,5 @@ O número do WhatsApp fica em `js/main.js`, na constante `CONTATO.whatsapp`: só
 
 ## Deploy
 Vercel, como site estático (sem build, raiz = esta pasta). O `vercel.json` define o cache de `/assets` e os headers de segurança.
+
+Visitas: painel da Vercel → projeto `comandou-landing` → **Analytics** (Vercel Web Analytics, sem cookie).
