@@ -14,7 +14,7 @@ O design já está definido e validado em `comandou-landing/design-refs/`:
 |---|---|
 | Stack | HTML + CSS + JS puro, sem build. Evolui a partir de `preview.html` |
 | CTA | WhatsApp (`wa.me`) com mensagem pronta, usando o número pessoal do usuário (`5516991244009`) por enquanto, em **uma constante** (`CONTATO.whatsapp`) |
-| Domínio | **Não mexer** em `www.comandou.app.br` nem no Master agora. A v1 vai para um deploy de preview na Vercel |
+| Domínio | A landing fica em **`www.comandou.app.br`** (canônico); `comandou.app.br` redireciona para o www. O Master vai para `master.comandou.app.br`, e `/master` na landing redireciona para lá (307) |
 | Preços | Fora da v1 |
 | Números e depoimentos | Fora da v1, até existir dado real (regra da spec visual) |
 | Telas do produto | **Mocks em HTML** (vindos da `preview.html`), não screenshots. O banco local não é tocado. Screenshots reais ficam para depois |
