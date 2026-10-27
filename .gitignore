@@ -1,0 +1,5 @@
+.vercel/
+node_modules/
+
+# Cópias salvas de sites de terceiros (só referência local; extração em design-refs/)
+refs/

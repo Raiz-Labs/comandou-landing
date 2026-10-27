@@ -1,0 +1,1004 @@
+{
+ "title": "Scotch | POS, Back Office & eComm for Liquor Stores",
+ "vars": {
+  "--tw-text-opacity": "1",
+  "--tw-bg-opacity": "1",
+  "--header-height": "3.75rem",
+  "--announcement-height": "0px",
+  "--swiper-theme-color": "#007aff",
+  "--font-mori": "'__mori_658136', '__mori_Fallback_658136'",
+  "--font-inter": "'__Inter_f367f3', '__Inter_Fallback_f367f3'"
+ },
+ "fonts": [
+  [
+   "__Inter_f367f3, __Inter_Fallback_f367f3, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   66
+  ],
+  [
+   "__mori_658136, __mori_Fallback_658136, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   24
+  ]
+ ],
+ "fontfaces": [
+  "__mori_658136 400",
+  "__mori_658136 600",
+  "__mori_Fallback_658136 ",
+  "__Inter_f367f3 100 900",
+  "__Inter_Fallback_f367f3 ",
+  "swiper-icons 400"
+ ],
+ "typeScale": [
+  [
+   "15px / 22.5px / 500 / ls normal",
+   13
+  ],
+  [
+   "34px / 42.5px / 600 / ls normal",
+   11
+  ],
+  [
+   "14px / 14px / 400 / ls 0.14px",
+   7
+  ],
+  [
+   "13px / 19.5px / 400 / ls normal",
+   7
+  ],
+  [
+   "16px / 24px / 400 / ls 0.08px",
+   6
+  ],
+  [
+   "15px / 21px / 600 / ls 0.3px",
+   5
+  ],
+  [
+   "34px / 39.78px / 600 / ls normal",
+   5
+  ],
+  [
+   "16px / 24px / 500 / ls 0.16px",
+   5
+  ],
+  [
+   "15px / 21px / 500 / ls normal",
+   3
+  ],
+  [
+   "16px / 24px / 500 / ls 0.08px",
+   3
+  ],
+  [
+   "16px / 24px / 400 / ls -0.16px",
+   3
+  ],
+  [
+   "16px / 24px / 500 / ls -0.16px",
+   3
+  ],
+  [
+   "18px / 27px / 500 / ls normal",
+   3
+  ],
+  [
+   "14px / 21px / 400 / ls normal",
+   3
+  ],
+  [
+   "18px / 26.1px / 400 / ls -0.18px",
+   2
+  ],
+  [
+   "16px / 17.6px / 500 / ls normal",
+   2
+  ],
+  [
+   "15px / 22.5px / 500 / ls 0.075px",
+   2
+  ],
+  [
+   "54px / 59.4px / 600 / ls normal",
+   1
+  ],
+  [
+   "54px / 59.4px / 500 / ls -1.08px",
+   1
+  ],
+  [
+   "16px / 24px / 400 / ls normal",
+   1
+  ],
+  [
+   "14px / 21px / 500 / ls normal",
+   1
+  ],
+  [
+   "20px / 26px / 400 / ls normal",
+   1
+  ],
+  [
+   "42px / 46.2px / 600 / ls normal",
+   1
+  ],
+  [
+   "15px / 22.5px / 400 / ls 0.075px",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "500",
+   36
+  ],
+  [
+   "400",
+   31
+  ],
+  [
+   "600",
+   23
+  ]
+ ],
+ "letterSpacing": [
+  [
+   "normal",
+   52
+  ],
+  [
+   "0.08px",
+   9
+  ],
+  [
+   "0.14px",
+   7
+  ],
+  [
+   "-0.16px",
+   6
+  ],
+  [
+   "0.3px",
+   5
+  ],
+  [
+   "0.16px",
+   5
+  ],
+  [
+   "0.075px",
+   3
+  ],
+  [
+   "-0.18px",
+   2
+  ],
+  [
+   "-1.08px",
+   1
+  ]
+ ],
+ "colors": [
+  [
+   "rgb(255, 255, 255)",
+   54
+  ],
+  [
+   "rgba(255, 255, 255, 0.4)",
+   7
+  ],
+  [
+   "rgb(245, 73, 0)",
+   6
+  ],
+  [
+   "rgb(204, 204, 204)",
+   4
+  ],
+  [
+   "rgba(255, 255, 255, 0.6)",
+   4
+  ],
+  [
+   "rgb(153, 153, 153)",
+   3
+  ],
+  [
+   "rgba(255, 255, 255, 0.9)",
+   3
+  ],
+  [
+   "rgb(128, 128, 128)",
+   2
+  ],
+  [
+   "rgba(255, 255, 255, 0.5)",
+   2
+  ],
+  [
+   "rgba(255, 255, 255, 0.3)",
+   2
+  ],
+  [
+   "rgb(0, 0, 0)",
+   1
+  ],
+  [
+   "rgb(165, 165, 165)",
+   1
+  ],
+  [
+   "rgb(102, 102, 102)",
+   1
+  ]
+ ],
+ "bgs": [
+  [
+   "rgb(0, 0, 0)",
+   17
+  ],
+  [
+   "rgb(245, 73, 0)",
+   13
+  ],
+  [
+   "rgba(255, 255, 255, 0.2)",
+   8
+  ],
+  [
+   "rgb(20, 20, 19)",
+   4
+  ],
+  [
+   "rgb(17, 17, 17)",
+   4
+  ],
+  [
+   "rgb(26, 26, 26)",
+   3
+  ],
+  [
+   "rgb(255, 255, 255)",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0.84)",
+   1
+  ],
+  [
+   "rgb(41, 41, 41)",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.4)",
+   1
+  ],
+  [
+   "linear-gradient(rgb(17, 17, 17), rgba(17, 17, 17, 0))",
+   1
+  ],
+  [
+   "linear-gradient(to top, rgb(17, 17, 17), rgba(17, 17, 17, 0))",
+   1
+  ],
+  [
+   "rgba(255, 255, 255, 0.3)",
+   1
+  ],
+  [
+   "rgb(62, 62, 62)",
+   1
+  ],
+  [
+   "rgb(51, 51, 51)",
+   1
+  ],
+  [
+   "rgba(0, 0, 0, 0.2)",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "9999px",
+   27
+  ],
+  [
+   "16px",
+   5
+  ],
+  [
+   "6px",
+   4
+  ],
+  [
+   "8px",
+   4
+  ],
+  [
+   "10px",
+   4
+  ],
+  [
+   "12px",
+   1
+  ],
+  [
+   "5px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.08) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   4
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(0, 0, 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   2
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(245, 73, 0) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   2
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(255, 255, 255) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   1
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(134, 134, 134) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   1
+  ],
+  [
+   "rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.07) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0) 0px 0px 0px 0px",
+   1
+  ]
+ ],
+ "borders": [
+  [
+   "1px solid rgb(41, 41, 41)",
+   3
+  ],
+  [
+   "1px solid rgb(26, 26, 26)",
+   1
+  ],
+  [
+   "1px solid rgba(255, 255, 255, 0.2)",
+   1
+  ],
+  [
+   "1px solid rgba(255, 255, 255, 0.16)",
+   1
+  ]
+ ],
+ "transitions": [
+  [
+   "opacity | 0.2s | cubic-bezier(0.4, 0, 0.2, 1)",
+   73
+  ],
+  [
+   "transform | 0.2s | cubic-bezier(0.4, 0, 0.2, 1)",
+   7
+  ],
+  [
+   "color, background-color, border-color, text-decoration-color, fill, stroke | 0.2s | cubic-bezier(0.4, 0, 0.2, 1)",
+   5
+  ],
+  [
+   "background-color, box-shadow | 0.5s | cubic-bezier(0.4, 0, 0.2, 1)",
+   5
+  ],
+  [
+   "transform, opacity | 0.5s | cubic-bezier(0.61, 1, 0.88, 1)",
+   5
+  ],
+  [
+   "transform | 0.3s | cubic-bezier(0.4, 0, 0.2, 1)",
+   3
+  ],
+  [
+   "color, transform | 0.2s | cubic-bezier(0.4, 0, 0.2, 1)",
+   3
+  ],
+  [
+   "opacity | 0.3s | cubic-bezier(0.4, 0, 0.2, 1)",
+   2
+  ],
+  [
+   "color, background-color, border-color, text-decoration-color, fill, stroke | 0.15s | cubic-bezier(0.4, 0, 0.2, 1)",
+   2
+  ],
+  [
+   "transform, color | 0.3s | cubic-bezier(0.61, 1, 0.88, 1)",
+   2
+  ],
+  [
+   "transform | 0.3s | cubic-bezier(0.61, 1, 0.88, 1)",
+   2
+  ],
+  [
+   "opacity | 0.15s | cubic-bezier(0.4, 0, 0.2, 1)",
+   2
+  ],
+  [
+   "all | 0.3s | cubic-bezier(0.4, 0, 0.2, 1)",
+   1
+  ],
+  [
+   "color, background-color, border-color, text-decoration-color, fill, stroke | 0.3s | cubic-bezier(0.4, 0, 0.2, 1)",
+   1
+  ],
+  [
+   "color, background-color, border-color, text-decoration-color, fill, stroke, opac | 0.3s | cubic-bezier(0.4, 0, 0.2, 1)",
+   1
+  ]
+ ],
+ "easings": [
+  [
+   "cubic-bezier(0.4, 0, 0.2, 1)",
+   105
+  ],
+  [
+   "cubic-bezier(0.61, 1, 0.88, 1)",
+   9
+  ]
+ ],
+ "animations": [
+  [
+   "scroll | 113.6s | linear | infinite",
+   4
+  ],
+  [
+   "scroll | 18.9333s | linear | infinite",
+   4
+  ]
+ ],
+ "keyframes": [
+  "@keyframes wave { 0% { transform: translate(-50%, -75%) rotate(0deg); } 100% { transform: translate(-50%, -75%) rotate(1turn); } }",
+  "@keyframes swiper-preloader-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(1turn); } }",
+  "@keyframes scroll { 0% { transform: translateX(0%); } 100% { transform: translateX(-100%); } }"
+ ],
+ "media": [
+  "(forced-colors: active)",
+  "(min-width: 360px)",
+  "(min-width: 400px)",
+  "(min-width: 640px)",
+  "(min-width: 768px)",
+  "(min-width: 880px)",
+  "(min-width: 1024px)",
+  "(min-width: 1280px)",
+  "(min-width: 1440px)",
+  "(min-width: 48rem)",
+  "(min-width: 80rem)",
+  "not all and (min-width: 1280px)",
+  "not all and (min-width: 1024px)",
+  "not all and (min-width: 880px)",
+  "not all and (min-width: 768px)",
+  "not all and (min-width: 640px)",
+  "(min-width: 850px)",
+  "(min-width: 950px)",
+  "(min-width: 1000px)",
+  "print"
+ ],
+ "gaps": [
+  [
+   "normal 10px",
+   7
+  ],
+  [
+   "normal 14px",
+   7
+  ],
+  [
+   "normal 12px",
+   6
+  ],
+  [
+   "normal 48px",
+   3
+  ],
+  [
+   "normal 20px",
+   3
+  ],
+  [
+   "17px",
+   3
+  ],
+  [
+   "normal 8px",
+   3
+  ],
+  [
+   "48px",
+   2
+  ],
+  [
+   "32px",
+   2
+  ],
+  [
+   "40px",
+   2
+  ],
+  [
+   "normal 84px",
+   1
+  ],
+  [
+   "normal 66px",
+   1
+  ],
+  [
+   "normal 18px",
+   1
+  ],
+  [
+   "44px",
+   1
+  ],
+  [
+   "16px normal",
+   1
+  ]
+ ],
+ "maxWidths": [
+  [
+   "100%",
+   77
+  ],
+  [
+   "1216px",
+   13
+  ],
+  [
+   "78px",
+   4
+  ],
+  [
+   "410px",
+   2
+  ],
+  [
+   "653px",
+   1
+  ],
+  [
+   "759px",
+   1
+  ],
+  [
+   "676px",
+   1
+  ],
+  [
+   "510px",
+   1
+  ],
+  [
+   "850px",
+   1
+  ],
+  [
+   "1210px",
+   1
+  ],
+  [
+   "630px",
+   1
+  ],
+  [
+   "392px",
+   1
+  ]
+ ],
+ "sectionPad": [
+  [
+   "0px 0px",
+   3
+  ],
+  [
+   "0px 164px",
+   3
+  ],
+  [
+   "88px 88px",
+   1
+  ],
+  [
+   "164px 164px",
+   1
+  ],
+  [
+   "0px 128px",
+   1
+  ],
+  [
+   "32px 0px",
+   1
+  ]
+ ],
+ "backdrop": [
+  [
+   "blur(5px)",
+   1
+  ]
+ ],
+ "h1": [
+  {
+   "tag": "H1",
+   "text": "The system that knows liquor like you do.",
+   "font": "__mori_658136, __mori_Fallback_658136, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "54px",
+   "lh": "59.4px",
+   "weight": "600",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none"
+  }
+ ],
+ "h2": [
+  {
+   "tag": "H2",
+   "text": "Simplify inventory, ordering, and analytics",
+   "font": "__mori_658136, __mori_Fallback_658136, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "34px",
+   "lh": "39.78px",
+   "weight": "600",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none"
+  },
+  {
+   "tag": "H2",
+   "text": "Made to fit your workflow",
+   "font": "__mori_658136, __mori_Fallback_658136, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "34px",
+   "lh": "39.78px",
+   "weight": "600",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none"
+  },
+  {
+   "tag": "H2",
+   "text": "Process transactions faster with the lowest fees guaranteed",
+   "font": "__mori_658136, __mori_Fallback_658136, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "34px",
+   "lh": "39.78px",
+   "weight": "600",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none"
+  },
+  {
+   "tag": "H2",
+   "text": "Liquor store owners, in their own words",
+   "font": "__mori_658136, __mori_Fallback_658136, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "34px",
+   "lh": "39.78px",
+   "weight": "600",
+   "ls": "normal",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none"
+  }
+ ],
+ "h3": [],
+ "p": [
+  {
+   "tag": "P",
+   "text": "Far from just another POS, Scotch is the all-in-one operating system designed ex",
+   "font": "__Inter_f367f3, __Inter_Fallback_f367f3, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "18px",
+   "lh": "26.1px",
+   "weight": "400",
+   "ls": "-0.18px",
+   "color": "rgb(255, 255, 255)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "Optimize stock and margins",
+   "font": "__Inter_f367f3, __Inter_Fallback_f367f3, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "16px",
+   "lh": "24px",
+   "weight": "400",
+   "ls": "0.08px",
+   "color": "rgb(153, 153, 153)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "Automatically read invoices",
+   "font": "__Inter_f367f3, __Inter_Fallback_f367f3, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "16px",
+   "lh": "24px",
+   "weight": "400",
+   "ls": "0.08px",
+   "color": "rgb(153, 153, 153)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "Access real-time dashboards",
+   "font": "__Inter_f367f3, __Inter_Fallback_f367f3, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "size": "16px",
+   "lh": "24px",
+   "weight": "400",
+   "ls": "0.08px",
+   "color": "rgb(153, 153, 153)",
+   "tt": "none"
+  }
+ ],
+ "eyebrows": [],
+ "buttons": [
+  {
+   "text": "",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 28,
+   "font": "16px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "all"
+  },
+  {
+   "text": "Products",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 14,
+   "font": "14px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bez"
+  },
+  {
+   "text": "Back OfficeControl your store",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 62,
+   "font": "16px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "all"
+  },
+  {
+   "text": "POS & PaymentsHardware for every store",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 62,
+   "font": "16px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "all"
+  },
+  {
+   "text": "Integrations",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 14,
+   "font": "14px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bez"
+  },
+  {
+   "text": "Pricing",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 14,
+   "font": "14px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bez"
+  },
+  {
+   "text": "About",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 14,
+   "font": "14px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bez"
+  },
+  {
+   "text": "Blog",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 14,
+   "font": "14px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "color 0.2s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.2s cubic-bez"
+  },
+  {
+   "text": "Login",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 35,
+   "font": "16px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "all"
+  },
+  {
+   "text": "Book a demo",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 35,
+   "font": "16px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "all"
+  },
+  {
+   "text": "Book a demo",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 40,
+   "font": "16px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "all"
+  },
+  {
+   "text": "See it in action",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 40,
+   "font": "16px 400",
+   "border": "0px solid rgb(229, 231, 235)",
+   "transition": "all"
+  }
+ ],
+ "header": {
+  "pos": "fixed",
+  "h": 60,
+  "bg": "rgb(0, 0, 0)",
+  "backdrop": "none",
+  "border": "0px solid rgb(229, 231, 235)",
+  "z": "50"
+ },
+ "libs": {
+  "gsap": false,
+  "ScrollTrigger": false,
+  "lenis": false,
+  "framer": false,
+  "lottie": false,
+  "video": 1,
+  "swiper": false,
+  "webflow": false,
+  "next": true,
+  "astro": false
+ },
+ "sections": [
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-10 md:",
+   "h": 1175,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "88px/88px",
+   "heading": "The system that knows liquor like you do."
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-0 pb-0",
+   "h": 123,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-16 md:",
+   "h": 1154,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "164px/164px",
+   "heading": "Simplify inventory, ordering, and analytics"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-0 pb-1",
+   "h": 490,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px/128px",
+   "heading": "Made to fit your workflow"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-0 pb-0",
+   "h": 937,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px/0px",
+   "heading": "Process transactions faster with the lowest fees guaranteed"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-0 pb-1",
+   "h": 261,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px/164px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-0 pb-1",
+   "h": 1696,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px/164px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-0 pb-1",
+   "h": 859,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px/164px",
+   "heading": "Liquor store owners, in their own words"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "relative isolate overflow-clip bg-black text-white pt-0 pb-0",
+   "h": 0,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "md:pt-8 bg-black",
+   "h": 608,
+   "bg": "rgb(0, 0, 0)",
+   "pad": "32px/0px"
+  }
+ ],
+ "assets": [
+  "https://scotchpos.com/_next/static/css/d1c9cfadc0f0821c.css",
+  "https://scotchpos.com/_next/static/chunks/pages/index-6a40c9175558b8c3.js",
+  "https://scotchpos.com/_next/static/chunks/webpack-a8def545f7812994.js",
+  "https://scotchpos.com/_next/static/P0Cmr8qvkip-9yDuGOCQ9/_ssgManifest.js",
+  "https://scotchpos.com/_next/static/chunks/1966.2ad7b31093048d08.js",
+  "https://scotchpos.com/_next/static/chunks/7375-5aea357b6f31ec79.js",
+  "https://scotchpos.com/_next/static/chunks/31d4e3d1-ec694acb606d27a9.js",
+  "https://scotchpos.com/_next/static/chunks/framework-840cff9d6bb95703.js",
+  "https://scotchpos.com/_next/static/chunks/8607.69630796f3092ce8.js",
+  "https://scotchpos.com/_next/static/P0Cmr8qvkip-9yDuGOCQ9/_buildManifest.js",
+  "https://scotchpos.com/_next/static/css/d4e90c0b35310616.css",
+  "https://scotchpos.com/_next/static/chunks/2381.43c691149d48c915.js",
+  "https://scotchpos.com/_next/static/chunks/4711-40e6e9592d8b3f1b.js",
+  "https://scotchpos.com/_next/static/chunks/9704.91c71bc7d8f432aa.js",
+  "https://scotchpos.com/_next/static/chunks/pages/_app-9475bca06845988c.js",
+  "https://scotchpos.com/_next/static/chunks/main-6bf98b79416e358e.js",
+  "https://scotchpos.com/_next/static/chunks/4659.0385304fcbaef955.js",
+  "https://scotchpos.com/_next/static/chunks/259.dff3fd54d982e008.js",
+  "https://scotchpos.com/_next/static/chunks/3826.8d1eae801055c0ff.js",
+  "https://scotchpos.com/_next/static/chunks/pages/%5B...slug%5D-1b7a327859c9ce3b.js",
+  "https://js.hs-scripts.com/45913533.js",
+  "https://js.hsadspixel.net/pixels.js",
+  "https://js.usemessages.com/conversations-embed.js",
+  "https://www.googletagmanager.com/gtm.js",
+  "https://js.hs-analytics.net/analytics/1793107500000/45913533.js",
+  "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+  "https://stapecdn.com/udc/v1.js",
+  "https://bzrcdn.openai.com/sdk/oaiq.min.js",
+  "https://connect.facebook.net/en_US/fbevents.js",
+  "https://bat.bing.com/bat.js",
+  "https://cdn.callrail.com/companies/332976303/c368716051b98d23813a/12/swap.js",
+  "https://scripts.clarity.ms/0.8.72/clarity.js",
+  "https://www.redditstatic.com/ads/pixel.js",
+  "https://js.hs-banner.com/v2/45913533/banner.js",
+  "https://bat.bing.com/p/action/343253256.js",
+  "https://js.hsforms.net/forms/v2.js",
+  "https://snippet.scotchpos.com/us-172c9393-dd72-428b-887c-3882190140e4.js"
+ ]
+}

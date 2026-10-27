@@ -1,0 +1,1368 @@
+{
+ "title": "Thrad: Paid Ads in AI - The DSP for LLMs",
+ "vars": {
+  "--accent-50": "#fdf0ea",
+  "--accent-200": "#f8c4ac",
+  "--accent-400": "#f0865a",
+  "--accent-500": "#ec521b",
+  "--accent-600": "#c43f12",
+  "--accent-800": "#8e2c0b",
+  "--ink-900": "#111112",
+  "--ink-700": "#3a3a3c",
+  "--ink-500": "#6e6e73",
+  "--ink-300": "#a1a1a6",
+  "--white": "#fff",
+  "--ground-50": "#f9f8f7",
+  "--ground-100": "#f2ede9",
+  "--ground-200": "#e8e2dc",
+  "--neutral-200": "#eaeaea",
+  "--line-hairline": "#0a0a0a1f",
+  "--line-strong": "#0a0a0a3d",
+  "--line-emphasis": "#0a0a0a73",
+  "--color-heading": "var(--ink-900)",
+  "--color-body": "var(--ink-900)",
+  "--color-secondary": "var(--ink-700)",
+  "--color-muted": "var(--ink-500)",
+  "--color-placeholder": "var(--ink-300)",
+  "--color-on-accent": "var(--white)",
+  "--color-on-ink": "var(--ground-50)",
+  "--color-accent": "var(--accent-500)",
+  "--color-accent-hover": "var(--accent-600)",
+  "--color-accent-pressed": "var(--accent-800)",
+  "--color-accent-surface": "var(--accent-50)",
+  "--color-page": "var(--ground-100)",
+  "--color-page-secondary": "var(--ground-50)",
+  "--color-surface": "var(--white)",
+  "--color-surface-sunken": "var(--ground-200)",
+  "--color-control-hover": "var(--neutral-200)",
+  "--color-segment-track": "#0a0a0a0f",
+  "--color-segment-thumb": "#f7f7f7",
+  "--color-segment-label": "#0a0a0aa6",
+  "--color-segment-label-active": "#1e1e20",
+  "--color-border": "var(--line-hairline)",
+  "--color-border-strong": "var(--line-strong)",
+  "--color-border-emphasis": "var(--line-emphasis)",
+  "--color-border-anchor": "var(--ink-900)",
+  "--color-border-accent": "var(--color-accent)",
+  "--color-key-surface": "#1a18160f",
+  "--color-key-border": "#1a18162e",
+  "--color-key-surface-faint": "#1a181608",
+  "--color-key-surface-strong": "#1a18161f",
+  "--color-success": "#2d5b3f",
+  "--color-success-surface": "#d5e5dd",
+  "--color-surface-glass": "#f9f8f76b",
+  "--color-terrain-deep": "#866b5b",
+  "--color-terrain-shadow": "#ab9383",
+  "--color-terrain-mid": "#c3a898",
+  "--color-terrain-warm": "#d8c3b5",
+  "--color-terrain-highlight": "var(--ground-200)",
+  "--color-scrim": "#0006",
+  "--color-scrim-strong": "#000000a8",
+  "--ember-900": "#1f0a04",
+  "--ember-800": "#2a0e07",
+  "--ember-700": "#3b170c",
+  "--color-ember": "var(--ember-800)",
+  "--color-canvas": "var(--ember-800)",
+  "--color-canvas-raised": "var(--ember-700)",
+  "--color-canvas-line": "#ffffff1f",
+  "--color-canvas-line-strong": "#ffffff4d",
+  "--color-on-canvas": "var(--ground-50)",
+  "--color-on-canvas-muted": "#fff9",
+  "--color-accent-on-canvas": "var(--accent-400)",
+  "--font-sans": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+  "--font-mono": "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, monospace",
+  "--font-weight-light": "300",
+  "--font-weight-regular": "400",
+  "--font-weight-medium": "500",
+  "--font-weight-semibold": "600",
+  "--text-display-hero": "clamp(44px, 5.6vw, 82px)",
+  "--text-display-hero--line-height": "1.01",
+  "--text-display-hero--tracking": "-.065em",
+  "--text-display-2xl": "48px",
+  "--text-display-2xl--line-height": "48px",
+  "--text-display-2xl--tracking": "-.05em",
+  "--text-display-xl": "38px",
+  "--text-display-xl--line-height": "34.2px",
+  "--text-display-xl--tracking": "-.063em",
+  "--text-display": "36px",
+  "--text-display--line-height": "37.8px",
+  "--text-display--tracking": "-.05em",
+  "--text-h2": "28px",
+  "--text-h2--line-height": "30.8px",
+  "--text-h2--tracking": "-.06em",
+  "--text-h3": "21px",
+  "--text-h3--line-height": "28px",
+  "--text-h3--tracking": "-.04em",
+  "--text-title": "24px",
+  "--text-title--line-height": "29px",
+  "--text-title--tracking": "-.01em",
+  "--text-step": "32px",
+  "--text-step--line-height": "36px",
+  "--text-step--tracking": "-.05em",
+  "--text-mock-title": "15px",
+  "--text-mock-title--line-height": "20px",
+  "--text-mock-body": "13px",
+  "--text-mock-body--line-height": "18px",
+  "--text-mock-label": "12px",
+  "--text-mock-label--line-height": "16px",
+  "--text-mock-micro": "10px",
+  "--text-mock-micro--line-height": "16px",
+  "--text-mock-micro--tracking": ".08em",
+  "--text-lead": "16px",
+  "--text-lead--line-height": "23.2px",
+  "--text-lead--tracking": "-.03em",
+  "--text-body-lg": "17px",
+  "--text-body-lg--line-height": "24px",
+  "--text-body-lg--tracking": "-.03em",
+  "--text-body": "16px",
+  "--text-body--line-height": "22px",
+  "--text-body--tracking": "-.028em",
+  "--text-index": "13px",
+  "--text-index--line-height": "16px",
+  "--text-index--tracking": ".04em",
+  "--text-caption": "14px",
+  "--text-caption--line-height": "20px",
+  "--text-caption--tracking": "-.01em",
+  "--text-micro": "11px",
+  "--text-micro--line-height": "1.4",
+  "--text-micro--tracking": ".04em",
+  "--text-eyebrow": "var(--text-caption)",
+  "--text-eyebrow--line-height": "var(--text-caption--line-height)",
+  "--text-eyebrow--tracking": "0em",
+  "--text-nav-title": "18px",
+  "--text-nav-title--line-height": "1.3",
+  "--text-card-title": "20px",
+  "--text-card-title--line-height": "1.15",
+  "--text-card-title--tracking": "-.05em",
+  "--text-card-feature": "36px",
+  "--text-card-feature--line-height": "1.1",
+  "--text-status-code": "46px",
+  "--text-status-code--line-height": ".94",
+  "--text-status-code--tracking": "-.07em",
+  "--text-stat": "38px",
+  "--text-stat--line-height": "1.08",
+  "--text-stat--tracking": "-.063em",
+  "--text-prose-title": "36px",
+  "--text-prose-title--line-height": "42px",
+  "--text-prose-title--tracking": "-.024em",
+  "--text-prose": "17px",
+  "--text-prose--line-height": "27px",
+  "--text-prose--tracking": "-.002em",
+  "--text-prose-sm": "15px",
+  "--text-prose-sm--line-height": "24px",
+  "--text-prose-sm--tracking": "-.004em",
+  "--text-prose-lead": "19px",
+  "--text-prose-lead--line-height": "29px",
+  "--text-prose-lead--tracking": "-.01em",
+  "--text-prose-h2": "25px",
+  "--text-prose-h2--line-height": "32px",
+  "--text-prose-h2--tracking": "-.02em",
+  "--text-prose-h3": "20px",
+  "--text-prose-h3--line-height": "28px",
+  "--text-prose-h3--tracking": "-.014em",
+  "--field-columns": "4",
+  "--field-inset": "var(--space-6)",
+  "--prose-measure": "47rem",
+  "--prose-flow": "27px",
+  "--prose-block": "var(--space-10)",
+  "--prose-break": "var(--space-16)",
+  "--band": "var(--space-24)",
+  "--band-lg": "var(--space-32)",
+  "--space-1": "4px",
+  "--space-2": "8px",
+  "--space-3": "12px",
+  "--space-4": "16px",
+  "--space-5": "20px",
+  "--space-6": "24px",
+  "--space-8": "32px",
+  "--space-10": "40px",
+  "--space-12": "48px",
+  "--space-16": "64px",
+  "--space-20": "80px",
+  "--space-24": "96px",
+  "--space-32": "128px",
+  "--space-section": "var(--space-16)",
+  "--space-section-lg": "var(--space-20)",
+  "--container-page": "1280px",
+  "--gutter": "var(--space-5)",
+  "--rail-measure": "min(100% - 2 * var(--gutter), var(--container-page) - 2 * var(--gutter))",
+  "--site-header-height": "var(--space-16)",
+  "--radius-none": "0",
+  "--radius-sm": "4px",
+  "--radius-md": "8px",
+  "--shadow-float": "0 1px 3px -1px #1111120f, 0 8px 24px -8px #1111121a",
+  "--shadow-raised": "0 1px 2px #0a0a0a14, 0 1px 3px #0a0a0a0a",
+  "--z-art-ground": "-2",
+  "--z-art-veil": "-1",
+  "--z-mega": "1",
+  "--z-header": "50",
+  "--z-banner": "60",
+  "--z-overlay": "70",
+  "--z-skip-link": "80",
+  "--duration-fast": ".15s",
+  "--duration-base": ".2s",
+  "--duration-slow": ".4s",
+  "--ease": "cubic-bezier(.44, 0, .56, 1)",
+  "--duration-rise": ".6s",
+  "--duration-fade": ".7s",
+  "--duration-draw": "2.5s",
+  "--ease-rise": "cubic-bezier(.22, 1, .36, 1)",
+  "--ease-fade": "cubic-bezier(.25, 0, .4, 1)",
+  "--ease-draw": "cubic-bezier(.45, 0, .55, 1)",
+  "--rise-offset": "24px",
+  "--drop-offset": "-100%",
+  "--duration-drop": ".9s",
+  "--duration-grow": ".7s",
+  "--ease-grow": "cubic-bezier(.34, 1.4, .64, 1)",
+  "--grow-lead": ".18s",
+  "--bp-tablet": "810px",
+  "--bp-desktop": "1200px"
+ },
+ "fonts": [
+  [
+   "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   232
+  ],
+  [
+   "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, monospace",
+   10
+  ]
+ ],
+ "fontfaces": [
+  "\"Inter Variable\" 100 900",
+  "Geist 400"
+ ],
+ "typeScale": [
+  [
+   "16px / 22px / 400 / ls -0.448px",
+   53
+  ],
+  [
+   "14px / 20px / 400 / ls -0.14px",
+   36
+  ],
+  [
+   "20px / 26px / 400 / ls -0.6px",
+   26
+  ],
+  [
+   "14px / 20px / 500 / ls -0.14px",
+   21
+  ],
+  [
+   "16px / 22px / 500 / ls -0.448px",
+   20
+  ],
+  [
+   "16px / 22px / 600 / ls -0.448px",
+   15
+  ],
+  [
+   "18px / 24px / 400 / ls -0.54px",
+   8
+  ],
+  [
+   "22px / 28px / 300 / ls -0.44px",
+   8
+  ],
+  [
+   "14px / 20px / 400 / ls normal",
+   6
+  ],
+  [
+   "40px / 42.8px / 300 / ls -2.4px",
+   6
+  ],
+  [
+   "24px / 29px / 400 / ls -0.24px",
+   5
+  ],
+  [
+   "20px / 26px / 500 / ls -0.6px",
+   5
+  ],
+  [
+   "22px / 28px / 300 / ls -0.88px",
+   4
+  ],
+  [
+   "13px / 22px / 400 / ls -0.448px",
+   4
+  ],
+  [
+   "11px / 15.4px / 500 / ls 0.44px",
+   3
+  ],
+  [
+   "24px / 27.6px / 300 / ls -1.2px",
+   3
+  ],
+  [
+   "14px / 14px / 600 / ls -0.448px",
+   3
+  ],
+  [
+   "20px / 30px / 400 / ls -0.448px",
+   3
+  ],
+  [
+   "16px / 24px / 400 / ls -0.448px",
+   3
+  ],
+  [
+   "14px / 14px / 500 / ls normal",
+   2
+  ],
+  [
+   "54px / 56.7px / 300 / ls -2.7px",
+   2
+  ],
+  [
+   "54px / 56.7px / 300 / ls -2.97px",
+   2
+  ],
+  [
+   "14px / 22px / 400 / ls -0.448px",
+   1
+  ],
+  [
+   "80.64px / 81.4464px / 300 / ls -5.2416px",
+   1
+  ],
+  [
+   "78px / 70.2px / 300 / ls -6.786px",
+   1
+  ],
+  [
+   "14px / 20px / 600 / ls -0.14px",
+   1
+  ]
+ ],
+ "weights": [
+  [
+   "400",
+   145
+  ],
+  [
+   "500",
+   51
+  ],
+  [
+   "300",
+   27
+  ],
+  [
+   "600",
+   19
+  ]
+ ],
+ "letterSpacing": [
+  [
+   "-0.448px",
+   102
+  ],
+  [
+   "-0.14px",
+   58
+  ],
+  [
+   "-0.6px",
+   31
+  ],
+  [
+   "normal",
+   8
+  ],
+  [
+   "-0.54px",
+   8
+  ],
+  [
+   "-0.44px",
+   8
+  ],
+  [
+   "-2.4px",
+   6
+  ],
+  [
+   "-0.24px",
+   5
+  ],
+  [
+   "-0.88px",
+   4
+  ],
+  [
+   "0.44px",
+   3
+  ]
+ ],
+ "colors": [
+  [
+   "rgb(17, 17, 18)",
+   107
+  ],
+  [
+   "rgb(249, 248, 247)",
+   45
+  ],
+  [
+   "rgb(58, 58, 60)",
+   32
+  ],
+  [
+   "rgb(110, 110, 115)",
+   25
+  ],
+  [
+   "rgba(255, 255, 255, 0.6)",
+   18
+  ],
+  [
+   "rgb(255, 255, 255)",
+   12
+  ],
+  [
+   "rgba(10, 10, 10, 0.65)",
+   2
+  ],
+  [
+   "rgb(30, 30, 32)",
+   1
+  ]
+ ],
+ "bgs": [
+  [
+   "rgb(17, 17, 18)",
+   12
+  ],
+  [
+   "rgb(249, 248, 247)",
+   12
+  ],
+  [
+   "rgb(236, 82, 27)",
+   10
+  ],
+  [
+   "rgb(42, 14, 7)",
+   10
+  ],
+  [
+   "rgb(242, 237, 233)",
+   8
+  ],
+  [
+   "linear-gradient(to top, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0))",
+   8
+  ],
+  [
+   "rgba(255, 255, 255, 0.2)",
+   8
+  ],
+  [
+   "rgba(26, 24, 22, 0.06)",
+   7
+  ],
+  [
+   "rgba(10, 10, 10, 0.12)",
+   5
+  ],
+  [
+   "rgb(232, 226, 220)",
+   4
+  ],
+  [
+   "rgb(255, 255, 255)",
+   4
+  ],
+  [
+   "linear-gradient(rgba(255, 255, 255, 0.3) 50%, rgba(0, 0, 0, 0) 50%)",
+   3
+  ],
+  [
+   "rgba(249, 248, 247, 0.42)",
+   3
+  ],
+  [
+   "linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4) 34%, rgba(0, 0, 0, 0) 62%), linear-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.65)), radial-gra",
+   2
+  ],
+  [
+   "rgba(0, 0, 0, 0.4)",
+   1
+  ],
+  [
+   "linear-gradient(rgba(10, 10, 10, 0.06) 0px, rgba(10, 10, 10, 0.06) 0px), none",
+   1
+  ],
+  [
+   "rgb(196, 63, 18)",
+   1
+  ],
+  [
+   "linear-gradient(rgb(160, 192, 222) 13%, rgb(96, 140, 198) 16%, rgb(68, 113, 175) 49%, rgb(46, 97, 159) 75%, rgb(26, 66, 119) 87%, rgb(8, 42, 91))",
+   1
+  ],
+  [
+   "rgb(110, 110, 115)",
+   1
+  ]
+ ],
+ "radii": [
+  [
+   "4px",
+   30
+  ],
+  [
+   "8px",
+   13
+  ],
+  [
+   "999px",
+   9
+  ],
+  [
+   "2px",
+   3
+  ],
+  [
+   "6px",
+   1
+  ]
+ ],
+ "shadows": [
+  [
+   "rgba(10, 10, 10, 0.12) 0px 0px 0px 1px inset",
+   1
+  ]
+ ],
+ "borders": [
+  [
+   "1px solid rgba(10, 10, 10, 0.12)",
+   29
+  ],
+  [
+   "1px solid rgba(0, 0, 0, 0)",
+   6
+  ],
+  [
+   "1px solid rgba(26, 24, 22, 0.18)",
+   2
+  ],
+  [
+   "1px solid rgba(10, 10, 10, 0.45)",
+   2
+  ],
+  [
+   "1px dashed rgba(10, 10, 10, 0.24)",
+   1
+  ],
+  [
+   "1px solid rgba(255, 255, 255, 0.3)",
+   1
+  ]
+ ],
+ "transitions": [
+  [
+   "color | 0.15s | cubic-bezier(0.44, 0, 0.56, 1)",
+   75
+  ],
+  [
+   "color, text-decoration-color, text-underline-offset | 0.4s, 0.4s, 0.4s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   36
+  ],
+  [
+   "opacity, translate | 0.2s, 0.2s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   24
+  ],
+  [
+   "opacity, transform | 0.7s, 0.6s | cubic-bezier(0.25, 0, 0.4, 1), cubic-bezier(0.22, 1, 0.36, 1)",
+   21
+  ],
+  [
+   "filter, opacity | 0.4s, 0.4s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   16
+  ],
+  [
+   "background-color, color | 0.15s, 0.15s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   12
+  ],
+  [
+   "opacity, translate | 0.15s, 0.15s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   12
+  ],
+  [
+   "background-color, border-color, color | 0.15s, 0.15s, 0.15s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   11
+  ],
+  [
+   "transform | 0.4s | cubic-bezier(0.44, 0, 0.56, 1)",
+   10
+  ],
+  [
+   "background-color | 0.2s | cubic-bezier(0.44, 0, 0.56, 1)",
+   9
+  ],
+  [
+   "clip-path, opacity, visibility | 0.2s | cubic-bezier(0.44, 0, 0.56, 1)",
+   5
+  ],
+  [
+   "rotate | 0.2s | cubic-bezier(0.44, 0, 0.56, 1)",
+   5
+  ],
+  [
+   "color | 0.4s | cubic-bezier(0.44, 0, 0.56, 1)",
+   3
+  ],
+  [
+   "background-color, color | 0.4s, 0.4s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   3
+  ],
+  [
+   "background-color, translate | 0.2s, 0.4s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.22, 1, 0.36, 1)",
+   3
+  ],
+  [
+   "flex-basis, background-color | 0.6s, 0.2s | cubic-bezier(0.22, 1, 0.36, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   3
+  ],
+  [
+   "opacity | 0.15s | cubic-bezier(0.44, 0, 0.56, 1)",
+   2
+  ],
+  [
+   "opacity, visibility | 0.7s, 0s | cubic-bezier(0.25, 0, 0.4, 1), ease",
+   2
+  ],
+  [
+   "transform | 0.9s | cubic-bezier(0.22, 1, 0.36, 1)",
+   1
+  ],
+  [
+   "block-size, opacity | 0.2s, 0.2s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   1
+  ],
+  [
+   "opacity | 0.2s | cubic-bezier(0.44, 0, 0.56, 1)",
+   1
+  ],
+  [
+   "color, translate | 0.2s, 0.4s | cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.22, 1, 0.36, 1)",
+   1
+  ],
+  [
+   "inline-size, border-color | 0.6s, 0.2s | cubic-bezier(0.22, 1, 0.36, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   1
+  ],
+  [
+   "transform | 0.15s | linear",
+   1
+  ]
+ ],
+ "easings": [
+  [
+   "cubic-bezier(0.44, 0, 0.56, 1)",
+   110
+  ],
+  [
+   "cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   68
+  ],
+  [
+   "cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   47
+  ],
+  [
+   "cubic-bezier(0.25, 0, 0.4, 1), cubic-bezier(0.22, 1, 0.36, 1)",
+   21
+  ],
+  [
+   "cubic-bezier(0.44, 0, 0.56, 1), cubic-bezier(0.22, 1, 0.36, 1)",
+   4
+  ],
+  [
+   "cubic-bezier(0.22, 1, 0.36, 1), cubic-bezier(0.44, 0, 0.56, 1)",
+   4
+  ],
+  [
+   "cubic-bezier(0.25, 0, 0.4, 1), ease",
+   2
+  ],
+  [
+   "cubic-bezier(0.22, 1, 0.36, 1)",
+   1
+  ],
+  [
+   "linear",
+   1
+  ]
+ ],
+ "animations": [
+  [
+   "wwd-pulse-in | 3.4s | ease | infinite",
+   24
+  ],
+  [
+   "wwd-pulse-out | 3.4s | ease | infinite",
+   24
+  ],
+  [
+   "flow-fill | 7s | linear | 1",
+   1
+  ]
+ ],
+ "keyframes": [
+  "@keyframes flow-fill { 100% { transform: scaleY(1); } }",
+  "@keyframes imsg-dot { 30% { opacity: 1; } 60% { opacity: 0.35; } }",
+  "@keyframes term-shimmer { 0% { background-position: 100% 0px; } 100% { background-position: -100% 0px; } }",
+  "@keyframes term-blink { 50% { opacity: 0; } }",
+  "@keyframes pulse { 50% { opacity: 0.5; } }",
+  "@keyframes summit-fill { 100% { transform: translateY(-50%) scaleX(1); } }",
+  "@keyframes wwd-pulse-in { 0% { --wwd-p: 330; animation-timing-function: var(--ease-rise); } 15%, 100% { --wwd-p: 295; } }",
+  "@keyframes wwd-pulse-out { 0%, 15% { --wwd-p: 405; animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); } 30%, 100% { --wwd-p: 370; } }"
+ ],
+ "media": [
+  "(hover: hover)",
+  "(width <= 809px)",
+  "(width >= 1200px)",
+  "(prefers-reduced-motion: reduce)",
+  "(width <= 1199px)",
+  "(prefers-reduced-motion: no-preference)",
+  "(hover: none)",
+  "(width <= 609px)",
+  "(width <= 479px)",
+  "(width >= 40rem)",
+  "(width <= 809px) and (orientation: portrait)"
+ ],
+ "gaps": [
+  [
+   "12px",
+   38
+  ],
+  [
+   "8px",
+   20
+  ],
+  [
+   "8px normal",
+   16
+  ],
+  [
+   "16px",
+   12
+  ],
+  [
+   "20px normal",
+   11
+  ],
+  [
+   "4px",
+   10
+  ],
+  [
+   "12px normal",
+   10
+  ],
+  [
+   "20px",
+   7
+  ],
+  [
+   "24px normal",
+   6
+  ],
+  [
+   "24px",
+   5
+  ],
+  [
+   "normal 48px",
+   5
+  ],
+  [
+   "32px",
+   4
+  ],
+  [
+   "normal 12px",
+   3
+  ],
+  [
+   "2px normal",
+   3
+  ],
+  [
+   "64px",
+   2
+  ]
+ ],
+ "maxWidths": [
+  [
+   "100%",
+   157
+  ],
+  [
+   "1280px",
+   20
+  ],
+  [
+   "min(100% - 80px, 1200px)",
+   13
+  ],
+  [
+   "280px",
+   3
+  ],
+  [
+   "576px",
+   3
+  ],
+  [
+   "calc(256px + min(100% - 80px, 1200px))",
+   1
+  ],
+  [
+   "460px",
+   1
+  ],
+  [
+   "632px",
+   1
+  ],
+  [
+   "316px",
+   1
+  ],
+  [
+   "180px",
+   1
+  ],
+  [
+   "416px",
+   1
+  ]
+ ],
+ "sectionPad": [
+  [
+   "0px 0px",
+   11
+  ]
+ ],
+ "backdrop": [
+  [
+   "blur(8px)",
+   8
+  ],
+  [
+   "blur(12px)",
+   3
+  ]
+ ],
+ "h1": [
+  {
+   "tag": "H1",
+   "text": "ProgrammaticAds in AI",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "80.64px",
+   "lh": "81.4464px",
+   "weight": "300",
+   "ls": "-5.2416px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  }
+ ],
+ "h2": [
+  {
+   "tag": "H2",
+   "text": "Advertise in conversational AI",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "54px",
+   "lh": "56.7px",
+   "weight": "300",
+   "ls": "-2.7px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  },
+  {
+   "tag": "H2",
+   "text": "We build the infrastructure for conversational advertising",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "40px",
+   "lh": "42.8px",
+   "weight": "300",
+   "ls": "-2.4px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  },
+  {
+   "tag": "H2",
+   "text": "One buy acrossevery AI conversation",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "40px",
+   "lh": "42.8px",
+   "weight": "300",
+   "ls": "-2.4px",
+   "color": "rgb(249, 248, 247)",
+   "tt": "none"
+  },
+  {
+   "tag": "H2",
+   "text": "Leading brands already running ads inside AI conversations",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "40px",
+   "lh": "42.8px",
+   "weight": "300",
+   "ls": "-2.4px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  }
+ ],
+ "h3": [
+  {
+   "tag": "H3",
+   "text": "Advertisers",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "22px",
+   "lh": "28px",
+   "weight": "300",
+   "ls": "-0.88px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  },
+  {
+   "tag": "H3",
+   "text": "Thrad",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "22px",
+   "lh": "28px",
+   "weight": "300",
+   "ls": "-0.88px",
+   "color": "rgb(249, 248, 247)",
+   "tt": "none"
+  },
+  {
+   "tag": "H3",
+   "text": "Publishers",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "22px",
+   "lh": "28px",
+   "weight": "300",
+   "ls": "-0.88px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  },
+  {
+   "tag": "H3",
+   "text": "Launch your products in AI chatbots and agents.",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "24px",
+   "lh": "27.6px",
+   "weight": "300",
+   "ls": "-1.2px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  }
+ ],
+ "p": [
+  {
+   "tag": "P",
+   "text": "Advertise",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "14px",
+   "lh": "20px",
+   "weight": "500",
+   "ls": "-0.14px",
+   "color": "rgb(58, 58, 60)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "Ads in AI conversations",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "24px",
+   "lh": "29px",
+   "weight": "400",
+   "ls": "-0.24px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "Be the answer when buyers ask AI what to buy.",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "16px",
+   "lh": "22px",
+   "weight": "400",
+   "ls": "-0.448px",
+   "color": "rgb(110, 110, 115)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "How you buy",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "14px",
+   "lh": "20px",
+   "weight": "500",
+   "ls": "-0.14px",
+   "color": "rgb(58, 58, 60)",
+   "tt": "none"
+  }
+ ],
+ "eyebrows": [
+  {
+   "tag": "SPAN",
+   "text": "Advertise",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "16px",
+   "lh": "22px",
+   "weight": "400",
+   "ls": "-0.448px",
+   "color": "rgb(17, 17, 18)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "Advertise",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "14px",
+   "lh": "20px",
+   "weight": "500",
+   "ls": "-0.14px",
+   "color": "rgb(58, 58, 60)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "How you buy",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "14px",
+   "lh": "20px",
+   "weight": "500",
+   "ls": "-0.14px",
+   "color": "rgb(58, 58, 60)",
+   "tt": "none"
+  },
+  {
+   "tag": "P",
+   "text": "Product",
+   "font": "\"Inter Variable\", Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", system-ui, sans-serif",
+   "size": "14px",
+   "lh": "20px",
+   "weight": "500",
+   "ls": "-0.14px",
+   "color": "rgb(58, 58, 60)",
+   "tt": "none"
+  }
+ ],
+ "buttons": [
+  {
+   "text": "Skip to content",
+   "bg": "rgb(17, 17, 18)",
+   "color": "rgb(249, 248, 247)",
+   "pad": "12px 16px",
+   "radius": "0px",
+   "h": 46,
+   "font": "14px 400",
+   "border": "0px none rgb(249, 248, 247)",
+   "transition": "all"
+  },
+  {
+   "text": "Sign in",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(17, 17, 18)",
+   "pad": "12px 0px",
+   "radius": "0px",
+   "h": 48,
+   "font": "16px 400",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), border-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), color 0.15s cu"
+  },
+  {
+   "text": "Book a call",
+   "bg": "rgb(236, 82, 27)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "12px 20px",
+   "radius": "0px",
+   "h": 48,
+   "font": "16px 500",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), border-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), color 0.15s cu"
+  },
+  {
+   "text": "Sign in",
+   "bg": "rgb(242, 237, 233)",
+   "color": "rgb(17, 17, 18)",
+   "pad": "8px 12px",
+   "radius": "0px",
+   "h": 0,
+   "font": "14px 500",
+   "border": "1px solid rgba(10, 10, 10, 0.12)",
+   "transition": "background-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), border-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), color 0.15s cu"
+  },
+  {
+   "text": "Book a call",
+   "bg": "rgb(236, 82, 27)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "8px 12px",
+   "radius": "0px",
+   "h": 0,
+   "font": "14px 500",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), border-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), color 0.15s cu"
+  },
+  {
+   "text": "Start now",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(17, 17, 18)",
+   "pad": "16px 24px",
+   "radius": "0px",
+   "h": 56,
+   "font": "16px 400",
+   "border": "1px solid rgba(10, 10, 10, 0.45)",
+   "transition": "background-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), border-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), color 0.15s cu"
+  },
+  {
+   "text": "Book a call",
+   "bg": "rgb(236, 82, 27)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "16px 24px",
+   "radius": "0px",
+   "h": 56,
+   "font": "16px 400",
+   "border": "1px solid rgba(0, 0, 0, 0)",
+   "transition": "background-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), border-color 0.15s cubic-bezier(0.44, 0, 0.56, 1), color 0.15s cu"
+  },
+  {
+   "text": "Book a callWe'll walk you through your f",
+   "bg": "rgb(249, 248, 247)",
+   "color": "rgb(17, 17, 18)",
+   "pad": "20px",
+   "radius": "4px",
+   "h": 200,
+   "font": "16px 400",
+   "border": "0px none rgb(17, 17, 18)",
+   "transition": "background-color 0.2s cubic-bezier(0.44, 0, 0.56, 1)"
+  },
+  {
+   "text": "Read the story",
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(17, 17, 18)",
+   "pad": "0px",
+   "radius": "0px",
+   "h": 40,
+   "font": "16px 400",
+   "border": "1px solid rgba(10, 10, 10, 0.12)",
+   "transition": "inline-size 0.6s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.44, 0, 0.56, 1)"
+  },
+  {
+   "text": "AWS Features Thrad's Multi-Agent System ",
+   "bg": "rgb(42, 14, 7)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "8px",
+   "h": 260,
+   "font": "16px 400",
+   "border": "0px none rgb(255, 255, 255)",
+   "transition": "all"
+  },
+  {
+   "text": "Microsoft features Thrad CCO on agentic ",
+   "bg": "rgb(42, 14, 7)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "8px",
+   "h": 260,
+   "font": "16px 400",
+   "border": "0px none rgb(255, 255, 255)",
+   "transition": "all"
+  },
+  {
+   "text": "BCG partners with Thrad for AI advertisi",
+   "bg": "rgb(42, 14, 7)",
+   "color": "rgb(255, 255, 255)",
+   "pad": "0px",
+   "radius": "8px",
+   "h": 260,
+   "font": "16px 400",
+   "border": "0px none rgb(255, 255, 255)",
+   "transition": "all"
+  }
+ ],
+ "header": {
+  "pos": "sticky",
+  "h": 64,
+  "bg": "rgb(232, 226, 220)",
+  "backdrop": "none",
+  "border": "1px solid rgba(10, 10, 10, 0.12)",
+  "z": "50"
+ },
+ "libs": {
+  "gsap": false,
+  "ScrollTrigger": false,
+  "lenis": false,
+  "framer": false,
+  "lottie": false,
+  "video": 1,
+  "swiper": false,
+  "webflow": false,
+  "next": false,
+  "astro": true
+ },
+ "sections": [
+  {
+   "tag": "SECTION",
+   "cls": "section section--sunken section--rhythm-none",
+   "h": 836,
+   "bg": "rgb(232, 226, 220)",
+   "pad": "0px/0px",
+   "heading": "ProgrammaticAds in AI"
+  },
+  {
+   "tag": "SCRIPT",
+   "cls": "",
+   "h": 0,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page section--rhythm-none",
+   "h": 1025,
+   "bg": "rgb(242, 237, 233)",
+   "pad": "0px/0px",
+   "heading": "Advertise in conversational AI"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page section--rhythm-none",
+   "h": 812,
+   "bg": "rgb(242, 237, 233)",
+   "pad": "0px/0px",
+   "heading": "We build the infrastructure for conversational advertising"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page section--rhythm-none",
+   "h": 634,
+   "bg": "rgb(242, 237, 233)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SCRIPT",
+   "cls": "",
+   "h": 0,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page section--rhythm-none",
+   "h": 96,
+   "bg": "rgb(242, 237, 233)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page-secondary section--rhythm-none",
+   "h": 1040,
+   "bg": "rgb(249, 248, 247)",
+   "pad": "0px/0px",
+   "heading": "One buy acrossevery AI conversation"
+  },
+  {
+   "tag": "SCRIPT",
+   "cls": "",
+   "h": 0,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page-secondary section--rhythm-none",
+   "h": 967,
+   "bg": "rgb(249, 248, 247)",
+   "pad": "0px/0px",
+   "heading": "Leading brands already running ads inside AI conversations"
+  },
+  {
+   "tag": "SCRIPT",
+   "cls": "",
+   "h": 0,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page-secondary section--rhythm-none",
+   "h": 669,
+   "bg": "rgb(249, 248, 247)",
+   "pad": "0px/0px",
+   "heading": "What people say"
+  },
+  {
+   "tag": "SCRIPT",
+   "cls": "",
+   "h": 0,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page-secondary section--rhythm-none",
+   "h": 528,
+   "bg": "rgb(249, 248, 247)",
+   "pad": "0px/0px",
+   "heading": "Sponsored IntelligenceSummit"
+  },
+  {
+   "tag": "SCRIPT",
+   "cls": "",
+   "h": 0,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page-secondary section--rhythm-none",
+   "h": 671,
+   "bg": "rgb(249, 248, 247)",
+   "pad": "0px/0px",
+   "heading": "See the latest from Thrad"
+  },
+  {
+   "tag": "SCRIPT",
+   "cls": "",
+   "h": 0,
+   "bg": "rgba(0, 0, 0, 0)",
+   "pad": "0px/0px"
+  },
+  {
+   "tag": "SECTION",
+   "cls": "section section--page-secondary section--rhythm-none",
+   "h": 461,
+   "bg": "rgb(249, 248, 247)",
+   "pad": "0px/0px",
+   "heading": "Run programmaticads in AI today"
+  }
+ ],
+ "assets": [
+  "https://www.thrad.ai/_astro/BaseLayout.BovYTQcP.css",
+  "https://www.thrad.ai/_astro/index.C_6-d33a.css",
+  "https://www.thrad.ai/_astro/FutureProof.astro_astro_type_script_index_0_lang.BpMQbZY4.js",
+  "https://www.thrad.ai/relay/static/array.js",
+  "https://www.thrad.ai/_astro/DotMountain.5txlIy6J.js",
+  "https://www.thrad.ai/_astro/client.RMePetAg.js",
+  "https://app.cal.com/embed/embed.js",
+  "https://www.thrad.ai/_astro/react.yIOJJ3r4.js",
+  "https://www.thrad.ai/_astro/jsx-runtime.DvU585tb.js",
+  "https://www.thrad.ai/relay/static/1.439.0/dead-clicks-autocapture.js",
+  "https://www.googletagmanager.com/gtm.js",
+  "https://www.thrad.ai/relay/array/phc_IcSZq7Wacv6wEuAGr6EHfw3RfYQeD7h3c1T9dS3B5a3/config.js",
+  "https://www.thrad.ai/relay/static/1.439.0/web-vitals-with-attribution.js",
+  "https://www.thrad.ai/_astro/AdSurfaces.CzPoUppV.js"
+ ]
+}

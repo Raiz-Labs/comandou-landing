@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landing Comandou — componentes b-system</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../comandou-web/src/assets/b-system/colors_and_type.css">
+<link rel="stylesheet" href="landing-tokens.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--b-font-sans); color: var(--b-fg); background: var(--l-band); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; display: block; }
+  svg.lucide { stroke-width: 1.5; }
+  .wrap { max-width: var(--l-container); margin: 0 auto; padding: 0 var(--l-gutter); }
+  .band { padding: var(--l-section-y) 0; }
+  .band--alt { background: var(--l-band-alt); }
+  .band--dark { background: var(--l-band-dark); color: var(--l-band-dark-fg); }
+  .spec { font-size: var(--b-font-size-xs); font-weight: 700; letter-spacing: var(--l-tracking-wider); text-transform: uppercase; color: var(--b-fg-subtle); margin: 0 0 var(--b-space-4); display: flex; gap: var(--b-space-2); align-items: center; }
+  .spec::after { content: ""; flex: 1; height: 1px; background: var(--b-border); }
+  .band--dark .spec { color: var(--l-band-dark-muted); }
+  .band--dark .spec::after { background: var(--b-neutral-700); }
+
+  /* type */
+  .l-display { font-size: var(--l-text-display); font-weight: 800; line-height: var(--l-leading-tight); letter-spacing: var(--l-tracking-tight); margin: 0; text-wrap: balance; }
+  .l-h2 { font-size: var(--l-text-h1); font-weight: 800; line-height: var(--l-leading-tight); letter-spacing: var(--l-tracking-tight); margin: 0; text-wrap: balance; }
+  .l-h3 { font-size: var(--l-text-h3); font-weight: 700; line-height: var(--l-leading-snug); margin: 0; }
+  .l-lead { font-size: var(--l-text-lead); color: var(--b-fg-muted); margin: 0; max-width: 34rem; }
+  .l-two-tone { color: var(--b-fg-subtle); }
+  .l-two-tone strong { color: var(--b-fg); font-weight: inherit; }
+
+  /* header */
+  .l-header { position: sticky; top: 0; z-index: var(--b-z-sticky); height: var(--l-header-h); background: var(--b-bg); border-bottom: 1px solid transparent; transition: background-color var(--l-dur-default) var(--l-ease-smooth), border-color var(--l-dur-default) var(--l-ease-smooth); }
+  .l-header.is-scrolled { background: color-mix(in srgb, var(--b-bg) 85%, transparent); backdrop-filter: blur(12px); border-color: var(--b-border); }
+  .l-header .wrap { height: 100%; display: flex; align-items: center; gap: var(--b-space-8); }
+  .l-header__logo { width: 132px; flex-shrink: 0; }
+  .l-nav { display: none; gap: var(--b-space-6); font-size: var(--b-font-size-sm); font-weight: 600; }
+  .l-nav a { color: var(--b-fg-muted); text-decoration: none; transition: color var(--l-dur-micro) var(--l-ease-smooth); }
+  .l-nav a:hover { color: var(--b-fg); }
+  .l-header__actions { margin-left: auto; display: flex; gap: var(--b-space-2); align-items: center; }
+  .l-header .l-btn--ghost { display: none; }
+  .l-header__logo { width: 112px; }
+  .l-desk-only { display: none; }
+  @media (min-width: 768px) { .l-header__logo { width: 132px; } .l-desk-only { display: inline; } .l-mob-only { display: none; } }
+  @media (min-width: 1024px) { .l-nav { display: flex; } .l-header .l-btn--ghost { display: inline-flex; } .l-header .l-burger { display: none; } }
+
+  /* eyebrow */
+  .l-eyebrow { display: inline-flex; align-items: center; gap: var(--b-space-2); padding: 6px 12px; border-radius: var(--b-radius-full); background: var(--b-primary-50); color: var(--b-primary-700); font-size: var(--b-font-size-xs); font-weight: 700; letter-spacing: var(--l-tracking-wider); text-transform: uppercase; }
+  .l-eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--b-primary-500); }
+
+  /* buttons */
+  .l-btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--b-space-2); min-height: 44px; padding: 0 var(--b-space-5); border-radius: var(--b-radius-sm); border: 1px solid transparent; font: 700 var(--b-font-size-md)/1 var(--b-font-sans); text-decoration: none; cursor: pointer; white-space: nowrap; transition: background-color var(--l-dur-micro) var(--l-ease-smooth), border-color var(--l-dur-micro) var(--l-ease-smooth), transform var(--l-dur-micro) var(--l-ease-smooth); }
+  .l-btn:active { transform: scale(.98); }
+  .l-btn:focus-visible, .l-tab:focus-visible, .l-link:focus-visible { outline: 2px solid var(--b-border-focus); outline-offset: 2px; }
+  .l-btn--lg { min-height: 52px; padding: 0 var(--b-space-6); }
+  .l-btn--primary { background: var(--b-primary-500); color: var(--b-fg-inverted); }
+  .l-btn--primary:hover { background: var(--b-primary-600); }
+  .l-btn--secondary { background: var(--b-neutral-100); color: var(--b-fg); border-color: var(--b-border); }
+  .l-btn--secondary:hover { background: var(--b-neutral-200); }
+  .l-btn--ghost { background: transparent; color: var(--b-fg-muted); }
+  .l-btn--ghost:hover { background: var(--b-neutral-100); color: var(--b-fg); }
+  .l-btn--on-dark { background: transparent; color: var(--b-fg-inverted); border-color: var(--b-neutral-600); }
+  .l-btn--on-dark:hover { border-color: var(--b-neutral-400); }
+  .l-btn--icon { min-width: 44px; padding: 0; }
+  .l-btn .lucide { width: 20px; height: 20px; }
+  .l-btn--primary .lucide-arrow-right, .l-link .lucide-arrow-right { transition: transform var(--l-dur-micro) var(--l-ease-smooth); }
+  .l-btn--primary:hover .lucide-arrow-right, .l-link:hover .lucide-arrow-right { transform: translateX(3px); }
+  .l-link { display: inline-flex; align-items: center; gap: 6px; color: var(--b-primary-500); font-weight: 700; text-decoration: none; text-underline-offset: 4px; transition: color var(--l-dur-micro) var(--l-ease-smooth); }
+  .l-link:hover { color: var(--b-primary-600); text-decoration: underline; }
+  .l-link .lucide { width: 18px; height: 18px; }
+  .row { display: flex; flex-wrap: wrap; gap: var(--b-space-3); align-items: center; }
+
+  /* hero */
+  .l-hero { position: relative; padding: var(--b-space-16) 0 var(--l-section-y); text-align: center; overflow: hidden; }
+  .l-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background-image: radial-gradient(var(--b-neutral-200) 1.2px, transparent 1.2px); background-size: 20px 20px; opacity: .6; mask-image: linear-gradient(to bottom, #000 0%, transparent 70%); }
+  .l-hero .l-lead { margin: var(--b-space-5) auto 0; }
+  .l-hero .l-display { margin-top: var(--b-space-5); max-width: 15ch; margin-inline: auto; }
+  .l-hero .row { justify-content: center; margin-top: var(--b-space-8); }
+
+  /* tabs */
+  .l-tabs { display: flex; gap: 4px; padding: 4px; border-radius: var(--b-radius-sm); background: var(--b-bg-sunken); border: 1px solid var(--b-border); width: max-content; max-width: 100%; margin: var(--b-space-12) auto var(--b-space-5); overflow-x: auto; scroll-snap-type: x mandatory; }
+  .l-tab { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 var(--b-space-4); border: 0; border-radius: 6px; background: transparent; color: var(--b-fg-muted); font: 700 var(--b-font-size-sm)/1 var(--b-font-sans); cursor: pointer; scroll-snap-align: start; transition: background-color var(--l-dur-default) var(--l-ease-smooth), color var(--l-dur-default) var(--l-ease-smooth); }
+  .l-tab .lucide { width: 18px; height: 18px; }
+  .l-tab:hover { color: var(--b-fg); }
+  .l-tab[aria-selected="true"] { background: var(--b-bg-elevated); color: var(--b-fg); box-shadow: var(--b-shadow-1); }
+
+  /* frame */
+  .l-frame { background: var(--b-bg-elevated); border: 1px solid var(--b-border); border-radius: var(--b-radius-lg); box-shadow: var(--b-shadow-3); overflow: hidden; text-align: left; }
+  .l-frame__bar { height: 32px; display: flex; align-items: center; gap: 6px; padding: 0 12px; border-bottom: 1px solid var(--b-border); background: var(--b-bg); }
+  .l-frame__bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--b-neutral-200); }
+  .l-panel { display: none; padding: var(--b-space-5); animation: l-fade var(--l-dur-default) var(--l-ease-smooth); }
+  .l-panel.is-active { display: block; }
+  @keyframes l-fade { from { opacity: 0; } to { opacity: 1; } }
+  .mock-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--b-space-4); font-weight: 800; }
+  .mock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--b-space-3); }
+  .mock-card { border: 1px solid var(--b-border); border-radius: var(--b-radius-md); padding: var(--b-space-3); background: var(--b-bg-elevated); font-size: var(--b-font-size-sm); }
+  .mock-card b { display: block; font-size: var(--b-font-size-md); }
+  .mock-card small { color: var(--b-fg-muted); }
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: var(--b-radius-xs); font-size: var(--b-font-size-xs); font-weight: 700; margin-top: 6px; }
+  .badge--ok { background: var(--b-success-100); color: var(--b-success-700); }
+  .badge--warn { background: var(--b-warning-100); color: var(--b-warning-700); }
+  .badge--idle { background: var(--b-neutral-100); color: var(--b-neutral-700); }
+  .badge--brand { background: var(--b-primary-50); color: var(--b-primary-700); }
+
+  /* feature trio */
+  .l-trio { display: grid; gap: var(--b-space-8); margin-top: var(--b-space-10); }
+  @media (min-width: 768px) { .l-trio { grid-template-columns: repeat(3, 1fr); } }
+  .l-trio__icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: var(--b-radius-sm); background: var(--b-primary-50); color: var(--b-primary-600); margin-bottom: var(--b-space-4); }
+  .l-trio__icon .lucide { width: 24px; height: 24px; }
+  .l-trio p { margin: 0; color: var(--b-fg-muted); }
+  .l-trio p strong { color: var(--b-fg); font-weight: 700; }
+
+  /* flow */
+  .l-flow { display: grid; gap: 0; margin-top: var(--b-space-10); align-items: center; }
+  @media (min-width: 768px) { .l-flow { grid-template-columns: 1fr 120px 1fr 120px 1fr; } }
+  .l-flow__node { background: var(--b-bg-elevated); border: 1px solid var(--b-border); border-radius: var(--b-radius-md); padding: var(--b-space-5); box-shadow: var(--b-shadow-1); text-align: center; }
+  .l-flow__node .lucide { width: 28px; height: 28px; color: var(--b-primary-500); }
+  .l-flow__node h3 { margin: var(--b-space-2) 0 0; font-size: var(--l-text-h3); }
+  .l-flow__node p { margin: 4px 0 0; font-size: var(--b-font-size-sm); color: var(--b-fg-muted); }
+  .l-flow__node--hub { background: var(--b-primary-500); border-color: var(--b-primary-500); color: var(--b-fg-inverted); box-shadow: var(--b-shadow-3); }
+  .l-flow__node--hub .lucide, .l-flow__node--hub p { color: var(--b-primary-100); }
+  .l-flow__link { height: 64px; display: block; width: 100%; }
+  .l-flow__link .track { stroke: var(--b-border-strong); stroke-width: 1.5; stroke-dasharray: 3 5; fill: none; }
+  .l-flow__link .pulse { stroke: var(--b-primary-500); stroke-width: 3; stroke-linecap: round; fill: none; stroke-dasharray: 14 86; animation: l-pulse 2.4s linear infinite; }
+  .l-flow__link--2 .pulse { animation-delay: 1.2s; }
+  @keyframes l-pulse { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+  .l-flow__link--v { display: block; } .l-flow__link--h { display: none; }
+  @media (min-width: 768px) { .l-flow__link--v { display: none; } .l-flow__link--h { display: block; } }
+  .l-flow__link--v { width: 2px; height: 48px; margin: 0 auto; }
+
+  /* old / new */
+  .l-oldnew { display: grid; gap: var(--b-space-4); margin-top: var(--b-space-10); }
+  @media (min-width: 768px) { .l-oldnew { grid-template-columns: 1fr 1fr; } }
+  .l-oldnew__card { border-radius: var(--b-radius-lg); padding: var(--b-space-8); border: 1px solid var(--b-border); }
+  .l-oldnew__card--old { background: var(--b-bg-sunken); color: var(--b-fg-muted); }
+  .l-oldnew__card--new { background: var(--b-bg-elevated); border-color: var(--b-primary-200); box-shadow: var(--b-shadow-2); }
+  .l-oldnew__card ul { list-style: none; padding: 0; margin: var(--b-space-5) 0 0; display: grid; gap: var(--b-space-3); }
+  .l-oldnew__card li { display: flex; gap: var(--b-space-3); align-items: flex-start; }
+  .l-oldnew__card li .lucide { width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px; }
+  .l-oldnew__card--old .lucide { color: var(--b-danger-500); }
+  .l-oldnew__card--new .lucide { color: var(--b-success-600); }
+
+  /* card hover */
+  .l-card { background: var(--b-bg-elevated); border: 1px solid var(--b-border); border-radius: var(--b-radius-md); padding: var(--b-space-6); box-shadow: var(--b-shadow-1); transition: box-shadow var(--l-dur-default) var(--l-ease-smooth), transform var(--l-dur-default) var(--l-ease-smooth); }
+  .l-card:hover { box-shadow: var(--b-shadow-2); transform: translateY(-2px); }
+
+  /* stats + testimonial */
+  .l-stats { display: grid; gap: var(--b-space-6); margin-top: var(--b-space-10); }
+  @media (min-width: 768px) { .l-stats { grid-template-columns: repeat(3, 1fr); } .l-stat + .l-stat { border-left: 1px solid var(--b-border); padding-left: var(--b-space-6); } }
+  .l-stat b { display: block; font-size: var(--l-text-stat); font-weight: 800; line-height: var(--l-leading-tight); letter-spacing: var(--l-tracking-tight); color: var(--b-primary-500); }
+  .l-stat span { font-size: var(--b-font-size-sm); color: var(--b-fg-muted); }
+  .l-quote .lucide-quote { width: 32px; height: 32px; color: var(--b-primary-300); }
+  .l-quote blockquote { margin: var(--b-space-3) 0 var(--b-space-5); font-size: var(--b-font-size-lg); font-weight: 600; line-height: 1.5; }
+  .l-quote figcaption { display: flex; gap: var(--b-space-3); align-items: center; font-size: var(--b-font-size-sm); color: var(--b-fg-muted); }
+  .l-quote figcaption b { color: var(--b-fg); display: block; }
+  .l-avatar { width: 40px; height: 40px; border-radius: var(--b-radius-full); background: var(--b-primary-100); color: var(--b-primary-700); display: grid; place-items: center; font-weight: 800; }
+
+  /* device */
+  .l-device { position: relative; max-width: 640px; margin: var(--b-space-10) auto 0; padding-bottom: 8%; }
+  .l-device__tablet { background: var(--b-fg); padding: 10px; border-radius: var(--b-radius-xl); box-shadow: var(--b-shadow-4); }
+  .l-device__tablet > div { background: var(--b-bg); border-radius: var(--b-radius-md); padding: var(--b-space-4); aspect-ratio: 16/10; overflow: hidden; }
+  .l-device__phone { position: absolute; right: -4%; bottom: 0; width: 30%; background: var(--b-fg); padding: 6px; border-radius: var(--b-radius-lg); box-shadow: var(--b-shadow-4); }
+  .l-device__phone > div { background: var(--b-bg); border-radius: var(--b-radius-md); padding: 8px; aspect-ratio: 9/18; display: grid; gap: 6px; align-content: start; }
+  .l-device__phone .mock-card { padding: 6px; font-size: 10px; }
+  .l-device__phone .mock-card b { font-size: 11px; }
+
+  /* dark CTA */
+  .l-cta { text-align: center; }
+  .l-cta img { width: 64px; margin: 0 auto var(--b-space-6); }
+  .l-cta .l-lead { color: var(--l-band-dark-muted); margin: var(--b-space-4) auto 0; }
+  .l-cta .row { justify-content: center; margin-top: var(--b-space-8); }
+  .l-footer { margin-top: var(--b-space-16); padding-top: var(--b-space-6); border-top: 1px solid var(--b-neutral-700); display: flex; flex-wrap: wrap; gap: var(--b-space-4); justify-content: space-between; align-items: center; font-size: var(--b-font-size-sm); color: var(--l-band-dark-muted); }
+  .l-footer img { width: 112px; }
+
+  /* token strip */
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--b-space-3); }
+  .sw { border: 1px solid var(--b-border); border-radius: var(--b-radius-md); overflow: hidden; font-size: var(--b-font-size-xs); background: var(--b-bg-elevated); }
+  .sw i { display: block; height: 56px; }
+  .sw span { display: block; padding: 8px 10px; }
+  .sw code { color: var(--b-fg-muted); }
+</style>
+</head>
+<body>
+
+<header class="l-header" id="hdr">
+  <div class="wrap">
+    <img class="l-header__logo" src="../../docs/logo/kit/comandou-horizontal.svg" alt="Comandou">
+    <nav class="l-nav" aria-label="Principal">
+      <a href="#como">Como funciona</a><a href="#recursos">Recursos</a><a href="#precos">Preços</a><a href="#contato">Contato</a>
+    </nav>
+    <div class="l-header__actions">
+      <a class="l-btn l-btn--ghost" href="#">Entrar</a>
+      <a class="l-btn l-btn--primary" href="#"><span class="l-mob-only">Agendar</span><span class="l-desk-only">Agendar demonstração</span></a>
+      <button class="l-btn l-btn--secondary l-btn--icon l-burger" aria-label="Abrir menu"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO + TABS + FRAME -->
+<section class="l-hero">
+  <div class="wrap">
+    <p class="spec">hero · eyebrow · display · lead · botões · tabs · frame</p>
+    <span class="l-eyebrow">Comanda digital para restaurantes</span>
+    <h1 class="l-display">Seu salão e sua cozinha falando a mesma língua</h1>
+    <p class="l-lead">O garçom lança o pedido no celular, a cozinha vê na hora e o caixa fecha a conta sem calculadora. Sem papel, sem pedido perdido.</p>
+    <div class="row">
+      <a class="l-btn l-btn--primary l-btn--lg" href="#">Agendar demonstração <i data-lucide="arrow-right"></i></a>
+      <a class="l-btn l-btn--secondary l-btn--lg" href="#"><i data-lucide="play-circle"></i> Ver o sistema funcionando</a>
+    </div>
+
+    <div class="l-tabs" role="tablist" aria-label="Telas por perfil">
+      <button class="l-tab" role="tab" aria-selected="true" aria-controls="p-garcom" id="t-garcom"><i data-lucide="smartphone"></i> Garçom</button>
+      <button class="l-tab" role="tab" aria-selected="false" aria-controls="p-cozinha" id="t-cozinha" tabindex="-1"><i data-lucide="chef-hat"></i> Cozinha</button>
+      <button class="l-tab" role="tab" aria-selected="false" aria-controls="p-caixa" id="t-caixa" tabindex="-1"><i data-lucide="receipt"></i> Caixa</button>
+      <button class="l-tab" role="tab" aria-selected="false" aria-controls="p-admin" id="t-admin" tabindex="-1"><i data-lucide="bar-chart-3"></i> Admin</button>
+    </div>
+    <div class="l-frame">
+      <div class="l-frame__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="l-panel is-active" role="tabpanel" id="p-garcom" aria-labelledby="t-garcom">
+        <div class="mock-head">Mesas <span class="badge badge--brand">8 ocupadas</span></div>
+        <div class="mock-grid">
+          <div class="mock-card"><b>Mesa 1</b><small>Ana · 3 itens</small><br><span class="badge badge--ok">Item pronto</span></div>
+          <div class="mock-card"><b>Mesa 2</b><small>Livre</small><br><span class="badge badge--idle">Livre</span></div>
+          <div class="mock-card"><b>Mesa 3</b><small>5 itens</small><br><span class="badge badge--warn">Em preparo</span></div>
+          <div class="mock-card"><b>Mesa 4</b><small>2 itens</small><br><span class="badge badge--warn">Em preparo</span></div>
+        </div>
+      </div>
+      <div class="l-panel" role="tabpanel" id="p-cozinha" aria-labelledby="t-cozinha">
+        <div class="mock-head">Fila da cozinha <span class="badge badge--warn">4 em preparo</span></div>
+        <div class="mock-grid">
+          <div class="mock-card"><b>2× Parmegiana</b><small>Mesa 3 · há 6 min</small><br><span class="badge badge--warn">Em preparo</span></div>
+          <div class="mock-card"><b>1× Risoto</b><small>Mesa 4 · há 2 min</small><br><span class="badge badge--idle">Pendente</span></div>
+          <div class="mock-card"><b>3× Suco</b><small>Mesa 1 · agora</small><br><span class="badge badge--ok">Pronto</span></div>
+        </div>
+      </div>
+      <div class="l-panel" role="tabpanel" id="p-caixa" aria-labelledby="t-caixa">
+        <div class="mock-head">Comandas abertas <span class="badge badge--brand">R$ 1.284,50</span></div>
+        <div class="mock-grid">
+          <div class="mock-card"><b>Mesa 1</b><small>R$ 142,00</small><br><span class="badge badge--brand">Dividir em 2</span></div>
+          <div class="mock-card"><b>Mesa 3</b><small>R$ 318,90</small><br><span class="badge badge--idle">Aberta</span></div>
+        </div>
+      </div>
+      <div class="l-panel" role="tabpanel" id="p-admin" aria-labelledby="t-admin">
+        <div class="mock-head">Hoje <span class="badge badge--ok">+12% vs. ontem</span></div>
+        <div class="mock-grid">
+          <div class="mock-card"><small>Vendas</small><b>R$ 4.920</b></div>
+          <div class="mock-card"><small>Ticket médio</small><b>R$ 86</b></div>
+          <div class="mock-card"><small>Mais vendido</small><b>Parmegiana</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="band band--alt" id="como">
+  <div class="wrap">
+    <p class="spec">l-flow · componente-assinatura</p>
+    <h2 class="l-h2" data-rise>Do pedido à conta, tudo na hora</h2>
+    <div class="l-flow">
+      <div class="l-flow__node" data-rise style="--i:0"><i data-lucide="smartphone"></i><h3>Garçom</h3><p>Lança o pedido na mesa</p><span class="badge badge--idle">Pedido lançado</span></div>
+      <svg class="l-flow__link l-flow__link--h" viewBox="0 0 120 64" preserveAspectRatio="none" aria-hidden="true"><path class="track" d="M0 32 C40 32 80 32 120 32" pathLength="100"/><path class="pulse" d="M0 32 C40 32 80 32 120 32" pathLength="100"/></svg>
+      <svg class="l-flow__link l-flow__link--v" viewBox="0 0 2 48" preserveAspectRatio="none" aria-hidden="true"><path class="track" d="M1 0 V48" pathLength="100"/><path class="pulse" d="M1 0 V48" pathLength="100"/></svg>
+      <div class="l-flow__node l-flow__node--hub" data-rise style="--i:1"><i data-lucide="chef-hat"></i><h3>Cozinha</h3><p>Recebe e avisa quando fica pronto</p><span class="badge badge--warn">Em preparo</span></div>
+      <svg class="l-flow__link l-flow__link--h l-flow__link--2" viewBox="0 0 120 64" preserveAspectRatio="none" aria-hidden="true"><path class="track" d="M0 32 C40 32 80 32 120 32" pathLength="100"/><path class="pulse" d="M0 32 C40 32 80 32 120 32" pathLength="100"/></svg>
+      <svg class="l-flow__link l-flow__link--v l-flow__link--2" viewBox="0 0 2 48" preserveAspectRatio="none" aria-hidden="true"><path class="track" d="M1 0 V48" pathLength="100"/><path class="pulse" d="M1 0 V48" pathLength="100"/></svg>
+      <div class="l-flow__node" data-rise style="--i:2"><i data-lucide="receipt"></i><h3>Caixa</h3><p>Fecha e divide a conta</p><span class="badge badge--ok">Conta fechada</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- OLD / NEW + TRIO -->
+<section class="band" id="recursos">
+  <div class="wrap">
+    <p class="spec">l-old-new · texto em dois tons · l-feature-trio · l-link</p>
+    <h2 class="l-h2 l-two-tone" data-rise><strong>Comanda de papel some, rasga e ninguém entende a letra.</strong> Chegou a hora de trocar.</h2>
+    <div class="l-oldnew">
+      <div class="l-oldnew__card l-oldnew__card--old" data-rise style="--i:0">
+        <h3 class="l-h3">Do jeito antigo</h3>
+        <ul>
+          <li><i data-lucide="x-circle"></i> Pedido anotado errado chega errado na cozinha</li>
+          <li><i data-lucide="x-circle"></i> Garçom indo e voltando para saber se ficou pronto</li>
+          <li><i data-lucide="x-circle"></i> Conta fechada na calculadora, com divisão no grito</li>
+        </ul>
+      </div>
+      <div class="l-oldnew__card l-oldnew__card--new" data-rise style="--i:1">
+        <h3 class="l-h3">Com o Comandou</h3>
+        <ul>
+          <li><i data-lucide="check-circle-2"></i> O pedido sai do celular e aparece na tela da cozinha</li>
+          <li><i data-lucide="check-circle-2"></i> O garçom recebe o aviso quando o prato fica pronto</li>
+          <li><i data-lucide="check-circle-2"></i> O caixa fecha e divide a conta em segundos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="l-trio">
+      <div data-rise style="--i:0"><div class="l-trio__icon"><i data-lucide="zap"></i></div><p><strong>Atualiza na hora</strong>, sem ninguém precisar recarregar a tela.</p></div>
+      <div data-rise style="--i:1"><div class="l-trio__icon"><i data-lucide="package"></i></div><p><strong>Estoque que se ajusta sozinho</strong> a cada venda.</p></div>
+      <div data-rise style="--i:2"><div class="l-trio__icon"><i data-lucide="shield-check"></i></div><p><strong>Cada um vê só o que precisa</strong>: garçom, cozinha, caixa e gerente.</p></div>
+    </div>
+    <p style="margin-top: var(--b-space-8)"><a class="l-link" href="#">Ver todos os recursos <i data-lucide="arrow-right"></i></a></p>
+  </div>
+</section>
+
+<!-- DEVICE -->
+<section class="band band--alt">
+  <div class="wrap" style="text-align:center">
+    <p class="spec">l-device · tablet + celular</p>
+    <h2 class="l-h2" data-rise>Instala no celular e no tablet que você já tem</h2>
+    <p class="l-lead" style="margin: var(--b-space-4) auto 0" data-rise>Sem loja de aplicativo e sem comprar maquininha. Funciona até na TV da cozinha.</p>
+    <div class="l-device" data-rise>
+      <div class="l-device__tablet"><div>
+        <div class="mock-head">Fila da cozinha <span class="badge badge--warn">4 em preparo</span></div>
+        <div class="mock-grid">
+          <div class="mock-card"><b>2× Parmegiana</b><small>Mesa 3</small><br><span class="badge badge--warn">Em preparo</span></div>
+          <div class="mock-card"><b>1× Risoto</b><small>Mesa 4</small><br><span class="badge badge--idle">Pendente</span></div>
+          <div class="mock-card"><b>3× Suco</b><small>Mesa 1</small><br><span class="badge badge--ok">Pronto</span></div>
+        </div>
+      </div></div>
+      <div class="l-device__phone"><div>
+        <div class="mock-card"><b>Mesa 1</b><span class="badge badge--ok">Pronto</span></div>
+        <div class="mock-card"><b>Mesa 3</b><span class="badge badge--warn">Preparo</span></div>
+        <div class="mock-card"><b>Mesa 4</b><span class="badge badge--idle">Livre</span></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS + TESTIMONIAL -->
+<section class="band">
+  <div class="wrap">
+    <p class="spec">l-stat · l-testimonial · l-card (valores ilustrativos, usar só com dado real)</p>
+    <h2 class="l-h2" data-rise>Quem usa não volta para o papel</h2>
+    <div class="l-stats">
+      <div class="l-stat" data-rise style="--i:0"><b>0</b><span>comandas perdidas no fim do turno</span></div>
+      <div class="l-stat" data-rise style="--i:1"><b>-40%</b><span>de pedidos errados na cozinha</span></div>
+      <div class="l-stat" data-rise style="--i:2"><b>2 min</b><span>para fechar e dividir uma conta</span></div>
+    </div>
+    <figure class="l-card l-quote" style="margin: var(--b-space-10) 0 0; max-width: 40rem" data-rise>
+      <i data-lucide="quote"></i>
+      <blockquote>A cozinha parou de gritar pro salão. O pedido chega certinho e o garçom sabe na hora que ficou pronto.</blockquote>
+      <figcaption><span class="l-avatar" aria-hidden="true">MR</span><span><b>Nome do cliente</b>Proprietário · Restaurante · Cidade, UF</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- DARK CTA + FOOTER -->
+<section class="band band--dark" id="contato">
+  <div class="wrap">
+    <p class="spec">l-cta-final · l-footer · faixa café (--b-fg)</p>
+    <div class="l-cta">
+      <img src="../../docs/logo/kit/comandou-stacked-white.svg" alt="" aria-hidden="true">
+      <h2 class="l-h2" data-rise>Pronto para tirar o papel do seu salão?</h2>
+      <p class="l-lead" data-rise>Mostramos o Comandou funcionando no seu restaurante em 20 minutos.</p>
+      <div class="row">
+        <a class="l-btn l-btn--primary l-btn--lg" href="#">Agendar demonstração <i data-lucide="arrow-right"></i></a>
+        <a class="l-btn l-btn--on-dark l-btn--lg" href="#"><i data-lucide="message-circle"></i> Falar no WhatsApp</a>
+      </div>
+    </div>
+    <footer class="l-footer">
+      <img src="../../docs/logo/kit/comandou-horizontal-white.svg" alt="Comandou">
+      <span>© 2026 Comandou</span>
+    </footer>
+  </div>
+</section>
+
+<!-- TOKENS -->
+<section class="band band--alt">
+  <div class="wrap">
+    <p class="spec">tokens usados (todos --b-*)</p>
+    <div class="swatches">
+      <div class="sw"><i style="background:var(--b-bg)"></i><span>Faixa<br><code>--b-bg</code></span></div>
+      <div class="sw"><i style="background:var(--b-bg-sunken)"></i><span>Faixa alt.<br><code>--b-bg-sunken</code></span></div>
+      <div class="sw"><i style="background:var(--b-bg-elevated)"></i><span>Card<br><code>--b-bg-elevated</code></span></div>
+      <div class="sw"><i style="background:var(--b-fg)"></i><span>Faixa café<br><code>--b-fg</code></span></div>
+      <div class="sw"><i style="background:var(--b-primary-500)"></i><span>CTA<br><code>--b-primary-500</code></span></div>
+      <div class="sw"><i style="background:var(--b-primary-600)"></i><span>CTA hover<br><code>--b-primary-600</code></span></div>
+      <div class="sw"><i style="background:var(--b-primary-50)"></i><span>Destaque<br><code>--b-primary-50</code></span></div>
+      <div class="sw"><i style="background:var(--b-border)"></i><span>Borda<br><code>--b-border</code></span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  lucide.createIcons({ attrs: { 'stroke-width': 1.5 } });
+
+  // header ao rolar
+  const hdr = document.getElementById('hdr');
+  addEventListener('scroll', () => hdr.classList.toggle('is-scrolled', scrollY > 8), { passive: true });
+
+  // tabs com teclado
+  const tabs = [...document.querySelectorAll('.l-tab')];
+  const select = (t) => {
+    tabs.forEach(x => { const on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+      document.getElementById(x.getAttribute('aria-controls')).classList.toggle('is-active', on); });
+    t.focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') select(tabs[(i + 1) % tabs.length]);
+      if (e.key === 'ArrowLeft') select(tabs[(i - 1 + tabs.length) % tabs.length]);
+    });
+  });
+
+  // reveal (uma vez)
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }), { threshold: 0.15 });
+  document.querySelectorAll('[data-rise]').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

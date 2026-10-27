@@ -1,0 +1,671 @@
+{
+ "scotch": {
+  "prereveal": [
+   {
+    "tag": "DIV",
+    "cls": "col-start-1 row-start-1 flex items-center justify-center",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "none",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "col-start-1 row-start-1 flex items-center justify-center",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "none",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "col-start-1 row-start-1 flex items-center justify-center",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "none",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "col-start-1 row-start-1 flex items-center justify-center",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "none",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "grid gap-5 sm:gap-6 md:auto-cols-fr md:grid-flow-col md:gap-8 xl:gap-11 w-full flex-1 xl:m",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "none",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 32)",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 32)",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 32)",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "absolute left-0 top-1/2 -mt-3 w-6 origin-center",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "absolute left-0 top-1/2 -mt-3 w-6 origin-center",
+    "attrs": "",
+    "opacity": "0",
+    "transform": "matrix(0.4, 0, 0, 0.4, 0, 0)",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "absolute left-0 top-1/2 aspect-[1/1] w-[0.5625rem] -translate-y-1/2 rounded-full bg-orange",
+    "attrs": "",
+    "opacity": "1",
+    "transform": "matrix(1, 0, 0, 1, 0, -4.5)",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "absolute left-0 w-full -translate-y-1/2",
+    "attrs": "",
+    "opacity": "1",
+    "transform": "matrix(1, 0, 0, 1, 0, -43)",
+    "filter": "none",
+    "transition": "all"
+   }
+  ],
+  "hover": [
+   {
+    "t": "Products",
+    "diff": {
+     "color": [
+      "rgb(255, 255, 255)",
+      "rgb(153, 153, 153)"
+     ]
+    }
+   },
+   {
+    "t": "Back OfficeControl your store",
+    "diff": {
+     "icon": [
+      "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 0)"
+     ]
+    }
+   },
+   {
+    "t": "POS & PaymentsHardware for every store",
+    "diff": {
+     "icon": [
+      "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 0)"
+     ]
+    }
+   },
+   {
+    "t": "Integrations",
+    "diff": {
+     "color": [
+      "rgb(255, 255, 255)",
+      "rgb(153, 153, 153)"
+     ]
+    }
+   },
+   {
+    "t": "Pricing",
+    "diff": {
+     "color": [
+      "rgb(255, 255, 255)",
+      "rgb(153, 153, 153)"
+     ]
+    }
+   },
+   {
+    "t": "About",
+    "diff": {
+     "color": [
+      "rgb(255, 255, 255)",
+      "rgb(153, 153, 153)"
+     ]
+    }
+   },
+   {
+    "t": "Blog",
+    "diff": {
+     "color": [
+      "rgb(255, 255, 255)",
+      "rgb(153, 153, 153)"
+     ]
+    }
+   },
+   {
+    "t": "Book a demo",
+    "diff": {
+     "icon": [
+      "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 0)"
+     ]
+    }
+   },
+   {
+    "t": "Find out more",
+    "diff": {
+     "icon": [
+      "none",
+      "matrix(1, 0, 0, 1, 2, 0)"
+     ]
+    }
+   },
+   {
+    "t": "Learn more",
+    "diff": {
+     "icon": [
+      "none",
+      "matrix(1, 0, 0, 1, 2, 0)"
+     ]
+    }
+   },
+   {
+    "t": "Find out more",
+    "diff": {
+     "icon": [
+      "none",
+      "matrix(1, 0, 0, 1, 2, 0)"
+     ]
+    }
+   },
+   {
+    "t": "",
+    "diff": {
+     "bg": [
+      "rgba(255, 255, 255, 0.3)",
+      "rgba(255, 255, 255, 0.5)"
+     ]
+    }
+   },
+   {
+    "t": "Book a demo",
+    "diff": {
+     "icon": [
+      "matrix(0.707107, -0.707107, 0.707107, 0.707107, 0, 0)",
+      "matrix(1, 0, 0, 1, 0, 0)"
+     ]
+    }
+   }
+  ],
+  "tabs": [],
+  "marquee": [
+   {
+    "cls": "rfm-marquee",
+    "anim": "113.6s linear infinite scroll",
+    "kids": 1,
+    "html": "<div class=\"rfm-marquee\" style=\"--play: running; --direction: normal; --duration: 113.6s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;\"><div class=\"rfm-initial-child-container\"><div cl"
+   },
+   {
+    "cls": "rfm-marquee",
+    "anim": "113.6s linear infinite scroll",
+    "kids": 12,
+    "html": "<div class=\"rfm-marquee\" style=\"--play: running; --direction: normal; --duration: 113.6s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;\"><div class=\"rfm-child\" style=\"--transform: none;"
+   },
+   {
+    "cls": "rfm-marquee",
+    "anim": "18.9333s linear infinite scroll",
+    "kids": 1,
+    "html": "<div class=\"rfm-marquee\" style=\"--play: running; --direction: normal; --duration: 18.933333333333334s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;\"><div class=\"rfm-initial-child-conta"
+   },
+   {
+    "cls": "rfm-marquee",
+    "anim": "18.9333s linear infinite scroll",
+    "kids": 4,
+    "html": "<div class=\"rfm-marquee\" style=\"--play: running; --direction: normal; --duration: 18.933333333333334s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;\"><div class=\"rfm-child\" style=\"--tra"
+   },
+   {
+    "cls": "rfm-marquee",
+    "anim": "18.9333s linear infinite scroll",
+    "kids": 1,
+    "html": "<div class=\"rfm-marquee\" style=\"--play: running; --direction: normal; --duration: 18.933333333333334s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;\"><div class=\"rfm-initial-child-conta"
+   },
+   {
+    "cls": "rfm-marquee",
+    "anim": "18.9333s linear infinite scroll",
+    "kids": 4,
+    "html": "<div class=\"rfm-marquee\" style=\"--play: running; --direction: normal; --duration: 18.933333333333334s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;\"><div class=\"rfm-child\" style=\"--tra"
+   }
+  ],
+  "media": [
+   {
+    "autoplay": true,
+    "loop": false,
+    "muted": true,
+    "playsinline": true,
+    "poster": false,
+    "src": "pos-payments-video-cta.mp4"
+   }
+  ],
+  "sticky": [],
+  "headerScrolled": {
+   "bg": "rgb(0, 0, 0)",
+   "transform": "none",
+   "shadow": "none",
+   "backdrop": "none",
+   "border": "0px solid rgb(229, 231, 235)",
+   "cls": "fixed left-0 right-0 top-0 z-50 transition-all duration-300 bg-black text-white"
+  },
+  "tabsT0": "Checkout:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Ordering:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Receiving:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Analytics:rgb(26, 26, 26):rgb(255, 255, 255): | Analytics:rgb(20, 20, 19):rgb(255, 255, 255): | Ordering:rgba(0, 0, 0, 0):rgb(255, 255, 255): | Receiving:rgba(0, 0, 0, 0):rgb(255, 255, 255): | Analytics:rgba(0, 0, 0, 0):rgb(255, 255, 255):",
+  "tabsT4": "Checkout:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Ordering:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Receiving:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Analytics:rgb(26, 26, 26):rgb(255, 255, 255): | Analytics:rgb(20, 20, 19):rgb(255, 255, 255): | Ordering:rgba(0, 0, 0, 0):rgb(255, 255, 255): | Receiving:rgba(0, 0, 0, 0):rgb(255, 255, 255): | Analytics:rgba(0, 0, 0, 0):rgb(255, 255, 255):",
+  "tabsT8": "Checkout:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Ordering:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Receiving:rgba(0, 0, 0, 0.84):rgb(255, 255, 255): | Analytics:rgb(26, 26, 26):rgb(255, 255, 255): | Analytics:rgb(20, 20, 19):rgb(255, 255, 255): | Ordering:rgba(0, 0, 0, 0):rgb(255, 255, 255): | Receiving:rgba(0, 0, 0, 0):rgb(255, 255, 255): | Analytics:rgba(0, 0, 0, 0):rgb(255, 255, 255):",
+  "tabHtml": "<div class=\"mb-8 flex flex-wrap items-center justify-center gap-x-2 gap-y-2 pt-4 sm:hidden\"><button type=\"button\" class=\"text-15-med rounded-md px-[0.8125rem] py-1.5 ring-1 ring-inset ring-white/[0.16] transition-colors duration-200 max-sm:text-[0.8125rem] bg-black/[0.84]\">Checkout</button><button type=\"button\" class=\"text-15-med rounded-md px-[0.8125rem] py-1.5 ring-1 ring-inset ring-white/[0.16] transition-colors duration-200 max-sm:text-[0.8125rem] bg-black/[0.84]\">Ordering</button><button type=\"button\" class=\"text-15-med rounded-md px-[0.8125rem] py-1.5 ring-1 ring-inset ring-white/[0.16] transition-colors duration-200 max-sm:text-[0.8125rem] bg-black/[0.84]\">Receiving </button><button type=\"button\" class=\"text-15-med rounded-md px-[0.8125rem] py-1.5 ring-1 ring-inset ring-white/[0.16] transition-colors duration-200 max-sm:text-[0.8125rem] bg-gray-10\">Analytics</button></div>",
+  "reducedMotion": 0
+ },
+ "thrad": {
+  "prereveal": [
+   {
+    "tag": "H2",
+    "cls": "text text--display tone--heading weight--300 ads__heading",
+    "attrs": "data-motion-rise,data-astro-cid-vwtj7edh,data-astro-cid-io6xibmp",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "ads__stage",
+    "attrs": "data-motion-rise,data-astro-cid-vwtj7edh",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "ad-surfaces__canvas",
+    "attrs": "",
+    "opacity": "1",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "filter": "none",
+    "transition": "all"
+   },
+   {
+    "tag": "DIV",
+    "cls": "wwd__heading",
+    "attrs": "data-motion-rise,data-astro-cid-7xbdjwkz",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "wwd__board",
+    "attrs": "data-motion-rise,data-astro-cid-7xbdjwkz",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "wwd__steps",
+    "attrs": "data-motion-rise,data-astro-cid-7xbdjwkz",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "VIDEO",
+    "cls": "film__media",
+    "attrs": "data-film,data-motion-rise,data-astro-cid-jfb2muyv",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "proof__heading",
+    "attrs": "data-motion-rise,data-astro-cid-sfe27nuv",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "proof__bento",
+    "attrs": "data-motion-rise,data-stage-root,data-stage,data-astro-cid-sfe27nuv,data-offscreen",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "head head--split head--ground",
+    "attrs": "data-motion-rise,data-astro-cid-ysklgcyt",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "A",
+    "cls": "cases__all",
+    "attrs": "data-motion-rise,data-astro-cid-dft55qem",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   },
+   {
+    "tag": "DIV",
+    "cls": "cases__list",
+    "attrs": "data-case-list,data-motion-rise,data-astro-cid-dft55qem",
+    "opacity": "0",
+    "transform": "matrix(1, 0, 0, 1, 0, 24)",
+    "filter": "none",
+    "transition": "opacity 0.7s cubic-bezier(0.25, 0, 0.4, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1)"
+   }
+  ],
+  "hover": [
+   {
+    "t": "Advertise",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "For Brands",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "For Agencies",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "For DSPs",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Self-Serve",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Managed Service",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Pricing",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Ad Infrastructure",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Safety",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Monetize",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Publisher Overview",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Monetization Fund",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Quickstart(opens in a new tab)",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "API reference(opens in a new tab)",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   },
+   {
+    "t": "Open Source(opens in a new tab)",
+    "diff": {
+     "color": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ],
+     "border": [
+      "rgb(17, 17, 18)",
+      "rgb(236, 82, 27)"
+     ]
+    }
+   }
+  ],
+  "tabs": [],
+  "marquee": [
+   {
+    "cls": "[object SVGAnimatedString]",
+    "anim": "3.4s infinite wwd-pulse-in",
+    "kids": 0,
+    "html": "<path class=\"wwd__pulse wwd__pulse--glow wwd__pulse--in\" d=\"M0 4C240 4 440 80 568 80\" pathLength=\"100\" data-astro-cid-7xbdjwkz=\"\"></path>"
+   },
+   {
+    "cls": "[object SVGAnimatedString]",
+    "anim": "3.4s infinite wwd-pulse-in",
+    "kids": 0,
+    "html": "<path class=\"wwd__pulse wwd__pulse--glow wwd__pulse--in\" d=\"M0 17.81818181818182C240 17.81818181818182 440 80 568 80\" pathLength=\"100\" data-astro-cid-7xbdjwkz=\"\"></path>"
+   },
+   {
+    "cls": "[object SVGAnimatedString]",
+    "anim": "3.4s infinite wwd-pulse-in",
+    "kids": 0,
+    "html": "<path class=\"wwd__pulse wwd__pulse--glow wwd__pulse--in\" d=\"M0 31.636363636363637C240 31.636363636363637 440 80 568 80\" pathLength=\"100\" data-astro-cid-7xbdjwkz=\"\"></path>"
+   },
+   {
+    "cls": "[object SVGAnimatedString]",
+    "anim": "3.4s infinite wwd-pulse-in",
+    "kids": 0,
+    "html": "<path class=\"wwd__pulse wwd__pulse--glow wwd__pulse--in\" d=\"M0 45.45454545454545C240 45.45454545454545 440 80 568 80\" pathLength=\"100\" data-astro-cid-7xbdjwkz=\"\"></path>"
+   },
+   {
+    "cls": "[object SVGAnimatedString]",
+    "anim": "3.4s infinite wwd-pulse-in",
+    "kids": 0,
+    "html": "<path class=\"wwd__pulse wwd__pulse--glow wwd__pulse--in\" d=\"M0 59.27272727272727C240 59.27272727272727 440 80 568 80\" pathLength=\"100\" data-astro-cid-7xbdjwkz=\"\"></path>"
+   },
+   {
+    "cls": "[object SVGAnimatedString]",
+    "anim": "3.4s infinite wwd-pulse-in",
+    "kids": 0,
+    "html": "<path class=\"wwd__pulse wwd__pulse--glow wwd__pulse--in\" d=\"M0 73.0909090909091C240 73.0909090909091 440 80 568 80\" pathLength=\"100\" data-astro-cid-7xbdjwkz=\"\"></path>"
+   }
+  ],
+  "media": [
+   {
+    "autoplay": false,
+    "loop": true,
+    "muted": true,
+    "playsinline": true,
+    "poster": true,
+    "src": "home-film-1080.mp4#t=22.9"
+   }
+  ],
+  "sticky": [
+   {
+    "tag": "HEADER",
+    "cls": "site-header",
+    "top": "0px",
+    "h": 64
+   }
+  ],
+  "headerScrolled": {
+   "bg": "rgb(232, 226, 220)",
+   "transform": "none",
+   "shadow": "none",
+   "backdrop": "none",
+   "border": "1px solid rgba(10, 10, 10, 0.12)",
+   "cls": "site-header"
+  },
+  "reducedMotion": 12
+ }
+}

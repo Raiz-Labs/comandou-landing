@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://comandou.app.br/sitemap.xml

@@ -1,0 +1,73 @@
+/*
+ * Comandou Landing — extensão do b-system
+ * Carregar DEPOIS de comandou-web/src/assets/b-system/colors_and_type.css (fonte da verdade).
+ *
+ * Regras:
+ *  - Nenhuma cor nova: tudo aqui aponta para --b-*. (GUIA-DE-USO / PROMPT nova identidade)
+ *  - Só entra o que o app não tem: escala display, ritmo de seção, motion de scroll.
+ *  - Valores sem token no comandou-web vêm do b-system canônico
+ *    (.claude/skills/b-system-design/colors_and_type.css) e estão marcados com [canônico].
+ *  - Spec de cada componente: design-refs/b-system-landing.md
+ */
+:root {
+  /* ── Tipografia display (Nunito) ─────────────────────────────── */
+  --l-text-display: clamp(2.5rem, 5vw, 3.5rem);   /* 40→56 · [canônico] --b-text-display */
+  --l-text-h1:      clamp(2rem, 4vw, 2.5rem);     /* 32→40 · [canônico] --b-text-h1 — título de seção */
+  --l-text-h3:      var(--b-font-size-xl);        /* 20 — título de card/feature */
+  --l-text-lead:    var(--b-font-size-lg);        /* 18 — subtítulo do hero/seção */
+  --l-text-stat:    clamp(2.25rem, 4vw, 3rem);    /* números de impacto */
+  --l-leading-tight: 1.15;                        /* [canônico] --b-leading-tight */
+  --l-leading-snug:  1.3;                         /* [canônico] --b-leading-snug */
+  --l-tracking-tight: -0.02em;                    /* [canônico] --b-tracking-tight — único tracking negativo */
+  --l-tracking-wider: 0.08em;                     /* [canônico] label uppercase */
+
+  /* ── Superfícies (faixas) — só tokens b-system ───────────────── */
+  --l-band:          var(--b-bg);          /* creme — padrão */
+  --l-band-alt:      var(--b-bg-sunken);   /* areia — alterna com a padrão */
+  --l-band-dark:     var(--b-fg);          /* café #2C1A0E — fundo aprovado p/ logo branca */
+  --l-band-dark-fg:  var(--b-fg-inverted);
+  --l-band-dark-muted: var(--b-neutral-300);
+  --l-band-brand:    var(--b-primary-500); /* terracota — fundo aprovado p/ logo on-terra; usar no máx. 1x */
+
+  /* ── Layout ──────────────────────────────────────────────────── */
+  --l-container: 1200px;
+  --l-gutter: var(--b-space-4);                    /* 16 mobile → 32 desktop (ver media) */
+  --l-section-y: var(--b-space-16);                /* 64 mobile → 128 desktop */
+  --l-header-h: var(--b-space-16);                 /* 64 */
+
+  /* ── Motion — b-system canônico (o app usa só --b-transition-*) ─ */
+  --l-ease-spring: cubic-bezier(0.34, 1.26, 0.64, 1); /* entrada de elementos */
+  --l-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);      /* mudança de estado / saída */
+  --l-dur-micro:   150ms;                             /* = --b-transition-fast */
+  --l-dur-default: 250ms;                             /* ≈ --b-transition-normal */
+  --l-dur-page:    350ms;                             /* reveal de bloco */
+  --l-rise-offset: var(--b-space-4);                  /* 16px — sutil, sem "pulo" */
+  --l-stagger:     60ms;
+}
+
+@media (min-width: 768px) {
+  :root { --l-gutter: var(--b-space-6); --l-section-y: var(--b-space-16); }
+}
+@media (min-width: 1024px) {
+  :root { --l-gutter: var(--b-space-8); --l-section-y: 8rem; } /* 128 = [canônico] --b-space-32 */
+}
+
+/* ── Reveal ao rolar ─────────────────────────────────────────────
+ * IntersectionObserver adiciona .is-in uma vez (once). --i = índice p/ stagger. */
+[data-rise] {
+  opacity: 0;
+  transform: translateY(var(--l-rise-offset));
+  transition: opacity var(--l-dur-page) var(--l-ease-smooth),
+              transform var(--l-dur-page) var(--l-ease-spring);
+  transition-delay: calc(var(--i, 0) * var(--l-stagger));
+}
+[data-rise].is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-rise] { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
